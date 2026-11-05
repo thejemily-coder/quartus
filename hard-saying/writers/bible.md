@@ -28,17 +28,35 @@ Jack and Lena **stop speaking**; **Jack sleeps with Skye** the night before she 
 stakes (Communion, confession, Osei, the purpose of amendment, the consequences) are real and written seriously. **Unchanged:** no sex for
 Lena with anyone; no one else for Jack; never mock the faith; no cheap villains or strawmen; Skye never coerces; no sexual assault or rape in
 anyone's background; everyone 18+; no procedural consent beats unless a scene would otherwise read as assault; Jack and Lena never die.
-**Endgame kept, road longer and different:** they still very likely end up together — not in Spring 2010 but by the start of sophomore year
-(default: honest at the end of freshman year, asked properly in New Orleans in Summer 2010, official in August — §23.2-ALT, §24.0-ALT).
+~~**Endgame kept, road longer and different:** they still very likely end up together — not in Spring 2010 but by the start of sophomore year
+(default: honest at the end of freshman year, asked properly in New Orleans in Summer 2010, official in August — §23.2-ALT, §24.0-ALT).~~ **SUPERSEDED
+2026-11-05 — see the re-plan box below.**
+
+> **ALT SEASON 2 RE-PLAN (player, 2026-11-05 — binds above the 2026-10-29 re-map; read with the brief's entry of that date and the coordinator's two
+> 2026-11-05 directives).** **Jack and Skye stay together, open-ended** — no planned breakup anywhere in S2; he is in love with her and completely happy,
+> and she is legitimately trying with his faith; the heat grows (escalation without repetition). **Jack stays in the fight with his faith:** after a
+> four-day flinch (S2E11's montage) he goes back to Osei's Wednesday light and keeps going, honestly unable to promise; the Sunday pew; the Easter duty
+> (to May 30) runs past the finale. **Skye's Catechism campaign starts now** (duels from S2E12); she comes to Mass with him every Sunday, including the ones
+> he doesn't go up; **she goes to see Osei on her own (S2E19).** **The away weeks (Feb 6–~21) are a montage at the top of S2E11** (the Super Bowl in 420 a
+> brief beat; the shoot is in **New Mexico**). **The silence is angry, not indifferent,** and holds (total cold) until the two-part finale: **proxy fight #2
+> (S2E29)**, then **the honest conversation on the roof (S2E30) — melancholic, regretful, no reunion; Jack does not leave Skye.** **Lena ends it with Julian
+> on her own (Feb, in New Orleans) and is single through the spring.** **The alliance is discovered late (S2E28)** and **quietly re-forms** after Theo and
+> Laney learn of the roof (S2E30 tag) — Kevin still not a member. **Jack and Lena: nothing before sophomore fall at the earliest; the long-run endgame is
+> deliberately unsettled in this timeline** — possible, never forced or scheduled. **Removed as scheduled beats:** the first words on Good Friday (now a
+> wordless crossing), telling Lena he slept with Skye at the roof (held), New Orleans in July / "Do it properly" / official Aug 15 (held, unscheduled), the
+> side-of-the-road breakup and everything downstream of it (suspended), the S2E16 discovery, "Kevin and Clare end" in S2 (default Summer 2010, Clare's
+> decision). Plan from **§23.2-ALT · REVISED FROM S2E11**.
 
 **Where the re-map lives (plan from these; the older text they point at is SUPERSEDED but kept for the record):**
-- **§23.2-ALT** — Season 2 from S2E10, episode by episode (replaces the old S2E10–S2E30 entries in §23.2), plus the S3/S4 consequences.
+- **§23.2-ALT** — Season 2 from S2E10, episode by episode (replaces the old S2E10–S2E30 entries in §23.2), plus the S3/S4 consequences. **From S2E11 plan
+  only from the sub-block "23.2-ALT · REVISED FROM S2E11" (2026-11-05)**; the 2026-10-29 E11+ entries sit below it under a ⛔ banner.
 - **§21 → "ALT TIMELINE REGISTRY OVERRIDES"** (after the registry table) — rows re-pointed or retired; new rows #92–#96.
 - **§24.0-ALT** — the romance roadmap for this timeline (supersedes the conflicting parts of §24.1–§24.9).
 - **§10.2 → "ALT ARC"** bullet — Skye from S2E10 to the end and after.
-- **`writers/nola_ledger.md`** — the New Orleans truth ledger is SUPERSEDED as a NOLA plan; it is now **the Silence Ledger**, every truth
-  re-placed to a new layer (the alliance discovered; the first words; the roof; New Orleans in July).
-- Revision log: "ALT TIMELINE — Season 2 re-map from S2E10 + S2E10 plan" (2026-10-29).
+- **`writers/nola_ledger.md`** — the New Orleans truth ledger is SUPERSEDED as a NOLA plan; it is now **the Silence Ledger**. **Layers re-cut 2026-11-05:**
+  L1 the alliance discovered (S2E28) · L2 the honest conversation on the roof (S2E30: the January truths, melancholic, no reunion) · L3 the deep truths
+  (HELD, unscheduled) · L4 anything that belongs to a beginning between them (HELD — incl. that he slept with Skye).
+- Revision log: "ALT TIMELINE — Season 2 re-map from S2E10 + S2E10 plan" (2026-10-29); **"ALT — the player's Season 2 re-plan from S2E11" (2026-11-05).**
 
 **Superseded in this timeline (do not plan from them):** the drive to New Orleans (I-10, the Odyssey, proxy fight #2 on the road and its
 verbatim last line *as placed*), the Broussards reading them as a couple in February, Super Bowl night in each other's arms, Lombardi Gras and
@@ -1465,15 +1483,44 @@ specifically, never pornographic, never on a journal card or in a recap. **Jack 
   - **"Who knows, maybe it'll be good for you guys."** — said in S2E10 when Jack tells her Theo asked him to New Orleans (she means the friendship; she
     never says Lena's name). He doesn't go anyway: Friday is hers. It haunts later for a different reason: he didn't go, and it wasn't good for anyone.
   - **"I don't sleep with men who'll confess me on Saturday"** (the old near-miss line) — **retired**; the near-miss doesn't happen; she never says it.
-  - **After the first time (S2E14–E19):** the relationship goes as far as it can (escalation rule still binds: never the same scene twice; the talk after
-    gets harder). Her S2E09 fear — "am I only ever going to be something you carry into that little room on a Wednesday?" — is the arc's question; his
-    Laetare return (S2E18) answers it the way she feared; she asks it once more, and he can't lie.
-  - **The end (S2E20, ≈Mar 22–24): the Saab, pulled over on the side of a road** (so "remember that time you told me you loved me and then dumped me on
-    the side of the road?" is literal). Brief's reaction kept (a bit → heartbreak → anger → get out), re-aimed: not "you cheated in New Orleans" but the
-    man behind the screen, or "her" — Jack can't say Lena, because as far as he knows it isn't. **Never a villain; it was always real to her** (brief).
-  - **After:** a week or two gone from the class; back — "explain it until I understand"; the Catechism campaign (brief, intact); Laney's tabloid reading;
-    her birthday on Easter Sunday (Jack's choice whether to text); the long thaw toward friendship, let it find its level (brief). Lena's coffee with Skye
-    (Fall 2010) is the room's call in this timeline (it now carries more; flag before writing it).
+  - ~~**After the first time (S2E14–E19)** … **The end (S2E20, the Saab on the side of a road)** … **After:** a week or two gone; "explain it until I
+    understand"; Laney's tabloid reading; the long thaw.~~ **SUPERSEDED 2026-11-05 (player's Alt Season 2 re-plan): no breakup is planned anywhere in S2;
+    the side-of-the-road scene, "So I'm the bad column," "remember that time you… dumped me on the side of the road," Laney's tabloid reading and the
+    post-breakup Catechism sequence are SUSPENDED in this timeline (not scheduled; never to be engineered).** The old text, for the record:
+    <<- **After the first time (S2E14–E19):** the relationship goes as far as it can (escalation rule still binds: never the same scene twice; the talk after
+        gets harder). Her S2E09 fear — "am I only ever going to be something you carry into that little room on a Wednesday?" — is the arc's question; his
+        Laetare return (S2E18) answers it the way she feared; she asks it once more, and he can't lie.
+      - **The end (S2E20, ≈Mar 22–24): the Saab, pulled over on the side of a road** (so "remember that time you told me you loved me and then dumped me on
+        the side of the road?" is literal). Brief's reaction kept (a bit → heartbreak → anger → get out), re-aimed: not "you cheated in New Orleans" but the
+        man behind the screen, or "her" — Jack can't say Lena, because as far as he knows it isn't. **Never a villain; it was always real to her** (brief).
+      - **After:** a week or two gone from the class; back — "explain it until I understand"; the Catechism campaign (brief, intact); Laney's tabloid reading;
+        her birthday on Easter Sunday (Jack's choice whether to text); the long thaw toward friendship, let it find its level (brief). Lena's coffee with Skye
+        (Fall 2010) is the room's call in this timeline (it now carries more; flag before writing it).>>
+  - **ALT ARC, REVISED 2026-11-05 — open-ended (binds; §23.2-ALT · REVISED FROM S2E11):**
+    - **They stay together, open-ended.** He is in love with her and **completely happy** with her — written as real, never as a placeholder or a
+      symptom; she is in love with him and **legitimately trying** with his faith (never going through the motions). No deadline, no engineered end;
+      the relationship finds its own weather. Hard rules: Skye never coerces; no one else for Jack.
+    - **Her struggle brings them closer.** What he's going through hurts her (the Sunday pew; the Wednesday light; "am I the thing you're sorry for?" —
+      her S2E09 fear, re-asked in a new key: not *will this end us* but *how do I stand next to it*). **She keeps coming to Mass with him every Sunday,
+      including the ones he doesn't go up** (from S2E11, the First Sunday of Lent, in the clothes she flew in). Good Friday she watches him go up for
+      the one thing he can (the cross); Easter is her 20th birthday.
+    - **The Catechism campaign starts now** ("Then explain it to me. Until I understand." — S2E11): seven duels across S2 (Eucharist · confession and
+      the purpose · authority after the scandals · Hell and mercy · sex and marriage · contraception · "what would it take for you to leave?"),
+      `skye_cat_jack` / `skye_cat_skye`; **unresolved at season's end.** 🔒 The pill (since sixteen, Debbie's doing) surfaces in duel #6 (S2E27), said by
+      her; no pregnancy plot, ever.
+    - **She goes to see Osei on her own (S2E19, Wed Mar 24).** A conversation, not a confession (default; if she chooses confession, the full seal);
+      off Jack's screen; Osei tells Jack nothing ("Ask her."); she tells him what she chooses; **never mocked.** It causes their first real fight
+      ("You went to my priest.") and the repair leaves them closer.
+    - **The heat grows: steps A1–A9** (§23.2-ALT heat ladder) — escalation without repeating scenes, frank literary standard, the cost living on
+      Wednesday and Sunday, never in the sheets.
+    - **Her world presses:** the New Mexico pilot (the not-nice girl) → the singalong's tail, Corinne, Debbie, LA (S2E14) → **picked up to series in
+      finals week (S2E29)**: she shoots in New Mexico from late June; *Sweetwater* wants two episodes in July. Summer = distance (Skye in Youngstown
+      for the Fourth is the default). Whether she returns to Marisol in the fall is open (player question).
+    - **Danny ↔ Skye** letters continue (New Mexico; Carrillo "in capitals"). **The Costigans:** Nonna's *buon compleanno, Maria Caterina* on Easter;
+      Ma's careful questions; Gina's caps; Jack's 19th.
+    - **Lena:** Skye clocked her long ago (`skye_clocked_lena`) and is generous about her (the Forum, S2E15) without ever naming what she sees. The
+      angry silence and the finale's roof are off Skye's screen except as Jack chooses to tell her; Jack does not leave Skye, and Lena doesn't ask.
+      Lena's coffee with Skye (main-timeline Fall 2010) is the room's call later; flag before writing it.
 - **Proxy fight #1 (S2E05)** and **#2 (S2E09)** (§24.6). **The fundraiser (S2E05)**; Laney gags; Lena laughs.
 - **The near-miss (S2E06):** the Del Playa house — Sol's darkroom under the red safelight, or her room (room's call): she tries, in earnest; it stops short
   — she stops it when she sees he's going to hate himself in the morning ("I don't sleep with men who'll confess me on Saturday"), or he does; resolve
@@ -2935,7 +2982,8 @@ the wall. Jack, in exchange — because it's the only thing he can offer — tel
 the same scene.) **Jack is Lena's boyfriend by then, and now he carries a secret that isn't his.**
 **ALT (alternate timeline, 2026-10-29):** the S2 spine above holds, re-pointed to the alt map (§23.2-ALT): Margot's anniversary feature starts **S2E17**; the
 duffel back on the shelf with Hale's postcard **S2E23–E24** (after Easter); Priya's journal **S2E24**; the anniversary **S2E25**; Theo's truth on the wall
-**S2E30**. **"On the trip, one beat only: Luc, NOPD…" is re-placed to Summer 2010 (S3), Jack's July visit to Dupre Street.** 🔒 New, period-anchored
+**S2E30**. **(2026-11-05 re-point: feature S2E13; duffel + Hale's postcard S2E24; Priya's journal S2E24; the anniversary S2E26 (Good Shepherd, Apr 25–26);
+Theo's truth on the wall + Danny S2E30, unchanged. Luc's kitchen-table beat: held, unscheduled — no July visit.)** **"On the trip, one beat only: Luc, NOPD…" is re-placed to Summer 2010 (S3), Jack's July visit to Dupre Street.** 🔒 New, period-anchored
 glimpse: **Sat Feb 6, 2010, debris flows in La Cañada Flintridge** under the Station Fire burn [V] — Theo's mother's street, the pool house where the
 duffel sits; Theo hears it in New Orleans; Jack gets only Theo's short voice on the phone (S2E11) and, in S2E10, one sentence ("My mother's under the
 burn. They're saying rain."). No inference on the page.
@@ -3087,6 +3135,38 @@ Duration classes: **EP** (one episode) · **ME** (multi-episode, 2–6) · **SEA
 | **94** | **The alliance discovered** (new; EP→ME, S2E16) | The tickets, the meeting, Kevin, the card. Theo–Jack's worst fight and its repair; Theo tells only what's his. Feeds #58 (Jack's "We know" has a real history). |
 | **95** | **The Silence Ledger** (new; replaces the NOLA truth ledger; `writers/nola_ledger.md`) | Layers: (1) the alliance (S2E16); (2) the first words (S2E22); (3) **the roof (S2E30)**; (4) **New Orleans (S3)**. New items: #18 Jack slept with Skye; #19 the card and the harder no; #20 the tickets. |
 | **96** | **Danny writes Skye** (new; EP, S2E10) | Danny's reply to her Jan 20 letter arrives Thu Feb 4 in Jack's box beside Lena's card; Skye reads it aloud. (Danny wrote it ≈Jan 27–28: he knows she's on TV and wrote him; not her name, the fundraiser, the singalong.) |
+
+**ALT REGISTRY OVERRIDES — REVISED 2026-11-05 (the player's Season 2 re-plan; read FIRST — where these conflict with the 2026-10-29 table above, these win).**
+
+| # | Arc | Override (2026-11-05) |
+|---|---|---|
+| 1 | Jack & Lena | S2E10 the double no and the silence → **an angry silence all spring** (three wordless crossings: the St. Joseph bean S2E17, the cross S2E21, the intentions book S2E25) → **S2E29 proxy fight #2 breaks it** → **S2E30 the honest conversation on the roof — melancholic, regretful, no reunion; Jack stays with Skye.** **Endgame deliberately unsettled in this timeline** (possible, never forced/scheduled; nothing before sophomore fall at the earliest). The 2026-10-29 Good Friday first words, roof-with-Skye-confession, S3 New Orleans asking and Aug 15 official are **removed as scheduled beats** (held, unscheduled). Main-timeline payoffs (Ephesians 5, proposal, wedding) are contingencies, re-dated only if a relationship ever begins. |
+| 11 | Kevin | **Kevin and Clare advanced, not ended in S2** (Valentine's by text E11; Clare's question E12; brothers E15; her mother's party E24; the drive problem E27). **The end is Clare's decision, kind, with her own reason — default Summer 2010**, before Kevin comes out to Jack and Lena (Fall 2010). Kevin still not in the alliance (objects; dragged along) and **doesn't lie** when Jack asks (S2E28). |
+| 12 | Margot | Anniversary feature starts **S2E13**. Dragged along by the re-formed alliance "for science" (S2E30 tag). |
+| 21 | Skye | **Together, open-ended — no planned end in S2 or after.** Back Sun Feb 21 (S2E11; straight into the 11:30 pew). In love; **he is completely happy; she is legitimately trying with his faith**. Catechism campaign duels #1–#7 (S2E12–E29), unresolved. **Sees Osei on her own S2E19.** Heat steps A1–A9. 🔒 The pill surfaces S2E27. The pilot picked up S2E29 (New Mexico from late June). Side-of-the-road breakup, "bad column," the tabloid reading: **suspended**. |
+| 23 | Julian & Lena | Lena ends it **in New Orleans, her own decision** (≈Feb 13–17); Jack hears Thu Feb 18 (S2E11). Single through the spring. Julian stays her friend; **his band still plays "Magdalena" at the last-week Bastille show (S2E29) with her blessing** — the plant that keeps the player's verbatim "how private you and Julian *are*" true. |
+| 29 | The Reliquary | Lent from Ash Wednesday (Feb 17): no cigarettes on the default path (`reliquary` 11; count resumes). **Return held, unscheduled** (no New Orleans visit). |
+| 57 | The secret alliance | Meeting #3 failed (S2E10); towel thrown in at Presidents' Day (S2E11 montage). **Jack figures it out S2E28** (late). **Quietly re-forms in the S2E30 tag** after Theo and Laney learn of the roof (never its contents) — a new approach for sophomore year, now against a Jack who knows. Theo and Laney only; Kevin objects and is dragged along, Margot "for science." |
+| 58 | The alliance reveal | Held to the first ensemble setpiece after Jack and Lena are ever official — **unscheduled.** |
+| 59 | Proxy fights | #1 S2E08 (played). **#2 S2E29** (Hale's paired oral, chair rule lifted; the player's verbatim last line as written). Named only if they're ever together. |
+| 68 | False dawns | #3 as tragedy (S2E11: Lena free, Jack with Skye). #4 (old "both free") **void** — Jack isn't free. Champagne corked, unscheduled. |
+| 73 / 74 | New Orleans / "Do it properly" | **Unscheduled** (no S3 visit planned). |
+| 80 | Lena's Skye joke | Not while the fear is live / not before any relationship; unscheduled. |
+| 81 | The hurt chain | The January links paid at **the S2E30 roof** (melancholic: what it would have taken to say it then). The rest held. |
+| 91 | "A no right now" | Contingency only (if Jack and Lena ever begin, it is part of what he tells her). |
+| **92** | **The silence** | S2E10 → **angry, total cold** (Hale's chair rule; "custody"; Priya's seating; Kevin's pain; Margot's sociology) → three wordless crossings → **breaks S2E29 (proxy #2)** → **the roof S2E30.** The group goes back to the way it was, awkward and uncertain. |
+| **93** | **Faith spine — the long Lent and the Wednesday light** | S2E11 the guilt alone (montage), a four-day flinch (Sat 3:30 passed; Sun Mass in town) → **Wed Feb 10 back to the light; never misses a Wednesday thereafter** (default) → Ash Wednesday's thumb → the Wednesday ledger (each different) → **Spy Wednesday hinge fork (S2E20)** → Easter = Skye's 20th (S2E22) → **May 12: "Do you also wish to go away?" / "To whom shall we go?"** (S2E29). Easter duty clock to May 30 runs past the finale. **No "purpose ends it with Skye" beat.** Never scrupulous, never excused. |
+| **94** | **The alliance discovered** | **S2E28** (late): the ticket, the meeting, Kevin, the card; Theo–Jack's worst fight; the lease nearly dies, signed anyway; repaired on the wall (S2E30). |
+| **95** | **The Silence Ledger** | Layers re-cut: **L1 S2E28** (alliance) · **L2 S2E30 roof** (the January truths) · **L3 held** (the deep truths) · **L4 held** (anything belonging to a beginning, incl. "he slept with Skye"). |
+| **96** | Danny writes Skye | Continues: Skye writes him from New Mexico (S2E11); letters through spring. |
+| **97** | **Skye's Catechism campaign (moved up; new row)** | Duels: #1 E12 Eucharist · #2 E14 confession/purpose · #3 E18 authority after the scandals · #4 E23 Hell and mercy · #5 E24 sex and marriage · #6 E27 contraception · #7 E29 "what would it take for you to leave?" `skye_cat_jack` / `skye_cat_skye`; she wins some; unresolved in S2. |
+| **98** | **Skye and Osei (new row)** | S2E19 (Wed Mar 24): she goes alone; a conversation unless she chooses confession (then the full seal); off Jack's screen; Osei: "Ask her."; their first real fight and repair. Osei–Skye thereafter: a nod at the door every Sunday. |
+
+**Status after S2E10 (played path):** the first time (`jack_slept_skye`, `jack_asked_skye`); **`s2e10_light = withheld`** (honest: he doesn't know that he
+means to stop; blessed; "the light is on Wednesdays"); `confession_owed` 2; **`s2e10_lena_no = table`** (the card slid back, "Lena saw that."); duel `chair`
+reframe/personal/press (`s2e10_chair_personal`: "renunciation's easy when it's somebody else's love you're giving up"); `theo_knows_nonna_q` ("which one"
+unanswered); `s2e10_smoke = reckless` (`jack_cigs` 16, `jack_cigs_jf` 5, `reliquary` 11); `s2e10_kevin = candor` ("What did you want instead?");
+`doug_super_bowl`; `skye_read_danny_letter`; Resolve Jack 0 · Lena 3.
 
 **Status after S2E09 (played path; ALT fork point):** #1 **trust 88 · warmth 77 · heat 29 · friction 52** (the hardening after Hale's — `s2e8_d3=real`,
 `jack_said_real_reason`, `lena_heard_move_on`; Lena laughed at the taquería gag and saw Jack see it, `lena_laughed_photo`, `jack_saw_lena_laugh`; Jack
@@ -4186,6 +4266,8 @@ Scott Brown, *Citizens United*, the State of the Union, Stupak, the auto bailout
 **S2E09 · "Love Is Patient"** · **Thu Jan 28 – Sun Jan 31, 2010** (tag ≈1:15 a.m. Mon Feb 1) · Thu St. Thomas Aquinas (Mark 4:21–25, the lamp; "the measure with which you measure"); Fri 2 Sam 11 / Mark 4:26–34; Sat 2 Sam 12 (Nathan) / Mark 4:35–41; **Sun Fourth OT C — Jer 1; 1 Cor 12:31–13:13 ("Love is patient"); Luke 4:21–30 ("no prophet is accepted in his own native place")**. *(Full plan: `outlines/s2e09.md` **rev. 1 — Showrunner plan on the real `saves/after-s2e08.json`** (S2E08 played; every E08 read flat). Supersedes the Story Editor's sketch rev. 0 and the paragraph that stood here.)* **Jack's state (brief, newest, binding):** in love with Skye and certain of nothing else; **beyond done with Lena after Hale's** — no longing on the page, avoidance as relief; **on the verge of yes** — the whole episode leans toward it. **Thu:** **cold open — Kevin's raincheck, the Commons window table, "hour four"** (`kevin_raincheck`): Kevin has heard about Hale's (Laney → Margot → Kevin), takes no side, says one Kevin-sized thing, then keeps the lunch about Clare and his list of things to say at hour four (🔒 #11: what he can't put on the list); **no PHIL 109H (Hale in New York)**; Salinger on the grapevine. **3:30, 412: Theo dresses him** (the one suit Theo owns that fits Jack; the tie; Theo after Hale's — "Don't ever make me watch that again" not repeated; he assumes Skye told Jack what the evening is). **THE FUNDRAISER (registry #83):** a fictional Meridian television president's house in the Palisades; **an early fundraiser for Barbara Boxer's 2010 re-election** (the candidate absent; a fictional Meridian showrunner speaks as surrogate — no invented words or conduct for any real person); Corinne's photographer shoots their arrival; two rounds of the room assuming his politics; **she sees it instantly, asks with a smile, asks again softer; he tells her (abortion, plainly; Stupak); she takes his arm and they walk out** — her condition: he explains his politics while they walk and listens to her say why he's wrong. **Duel `walk` (Jack vs Skye; HUD; she wins points on every path)** down Sunset to the sea: abortion and the Stupak fight; health care after Scott Brown; the auto bailout, unions and Lordstown (Frank); Hollywood money — she knows her world's hypocrisies firsthand; with Skye politics is a game between people who differ. **A fictional all-night taquería at the foot of Sunset by PCH, after midnight:** her father; 🔒 **her real name, as an intimacy — Mary Catherine Callender-Doyle** (her father Pat Doyle, a set lighting electrician, gone since she was four; the name is his mother's and the only thing she has that Debbie didn't name; baptized at St. Mary's, Lancaster); it answers Nonna's question (E08 tag); **the arm's-length photo** (back camera; never "selfie") she asks to post **instead of** Corinne's arrival photo — she won't post anything implying he supports something he doesn't; sweet only. **Fri:** the likes (Theo's polite one; Margot; Kenzie; Youngstown on his wall); Corinne's fallout (no villain: she got her arrival shot; the host noticed the exit); Nonna: *Maria Caterina*; Gina; **4:40 p.m., the Delgado lounge — Laney on her laptop gags theatrically at the photo; Lena laughs despite herself, catches Jack seeing it, and the laugh dies on her face** — the crack in the war neither can use: the player sees it in her face; **Jack feels nothing he'll admit to, or irritation** (newest brief); the one cigarette urge (`s2e9_smoke`); Friday night the Fishbowl with Skye (Margot vs Skye on the walkout — a real argument; "I walked out *with* him. I'm still voting for her."). **Sat:** daylight with Skye (the Point for Pair 41; Fenner's project); Jack ties Theo's tie for Pi Lam's winter formal (reversal); the full moon; **a heat beat, not a rung — she keeps her word ("not this week"), and he is the one who almost asks**. **Sun:** the 11:30 at St. Brendan's — **he goes up; Skye watches (her condition met, her word kept)**; Osei at the door, a look; fork lunch [Anchor / Newman coffee] (daylight); Ma's quiet call (Luke 4 at the 8:00 at St. Brigid's; **Sun Jan 31 is Ma's every-other-Sunday at Trumbull** — Frank goes in; Gina tells Danny the name across the table and **Danny thinks it's hilarious** — "a NUN?" — relayed by Gina on the call). **Heat rung S2-d (Sun night; §10.2): she asks; "It's still no. For now. But it's closer than it's ever been" — a no hanging by a thread**; the talk after, the deepest yet (the question she's the answer to; "the good thing, with the lights off"); `confession_owed` +1. Fork `s2e9_after` [stay — sleep only / home].
 
 ### 23.2-ALT Season 2 from S2E10 — ALTERNATE TIMELINE RE-MAP (Showrunner, 2026-10-29; built on the real `saves/after-s2e09.json`; supersedes the old S2E10–S2E30 entries below)
+> **2026-11-05:** the S2E10 entry below is played canon. **The "Shape of the rest of the season," "Standing rules," "Allocation" and every entry from S2E11 on in
+> this 2026-10-29 block are SUPERSEDED** by "23.2-ALT · REVISED FROM S2E11" (inserted after the S2E10 entry), which binds instead.
 *Title theme unchanged: "Do you also wish to go away?" (John 6:67).* **Shape of the rest of the season:** (1) **the no and the first time** (E10);
 (2) **the empty week** — everyone he loves is somewhere else, and the guilt arrives alone (E11–E13); (3) **the long Lent** — Skye back and the
 relationship going as far as it goes; Jack not going up, avoiding Osei, while Lena (free of Julian, not speaking to him) keeps her own Lent ten
@@ -4231,6 +4313,302 @@ Margot to SBA (Theo's car service; DFW to MSY [V]); not a word from Lena; Laney:
 Del Playa, rain — THE FIRST TIME** (the fork directive; the brief's frank literary standard; Jack asks — the first time he has asked for the thing
 itself; the player chooses how, never whether; he doesn't think about anything; afterward completely, perfectly happy; asleep in each other's
 arms). **No guilt beat after it in E10.** (Heat ladder's last rung — §10.2 ALT ARC.)
+
+#### 23.2-ALT · REVISED FROM S2E11 — THE PLAYER'S SEASON 2 RE-PLAN (Showrunner, 2026-11-05; built on the real `saves/after-s2e10.json`; supersedes the 2026-10-29 E11–S4 entries further below, which are kept for the record under a ⛔ banner)
+**Binding sources, in order:** the fork directives and **"Alt Season 2 re-plan (player, 2026-11-05)"** at the top of `brief.md`; the **coordinator's
+2026-11-05 directive (player): SPEED THROUGH the away weeks** — New Orleans and Skye's shoot (New Mexico, outside Santa Fe, as published; the player's
+"Canada" was from memory) are covered by a short montage at the top of S2E11, and the episode gets to the returns fast; the "Alt S2E10 notes
+session" (Kevin is NOT in the alliance — it is Theo and Laney; Kevin objects and gets dragged along, like Margot). **The S2E10 note "afterward Jack
+avoids Osei" is reconciled, not kept:** the avoidance is **four days, two doors, neither of them his appointment** (Saturday's 3:30 hour passed by
+on Ocean Road; Sunday's Mass in town, in the pew). **Wednesday Feb 10 he goes back to the light, and from then on he never misses a Wednesday** in
+S2 unless the player chooses to (justification: the guilt arriving alone needs one honest beat of shame to be human and not pious; the re-plan's
+"he keeps going back" needs the return to be *his*, not a schedule's; four days is a flinch, not drift, and Osei's own "the light is on Wednesdays"
+(S2E10) makes Wednesday the appointment he keeps).
+
+**The played state entering S2E11 (save, read flat):** `jack_slept_skye`, `jack_asked_skye`, `skye_first_time`; **`s2e10_light = "withheld"`** (he told
+Osei the truth — he doesn't know that he means to stop; no absolution; a blessing; "the light is on Wednesdays"); `confession_owed` 2; **`s2e10_lena_no
+= "table"`** (the card slid back down Hale's table without a word; "Lena saw that."); `s2e10_chair_personal` ("renunciation's easy when it's somebody
+else's love you're giving up," relayed by Hale); `theo_knows_nonna_q` (all of Nonna's question; **"which one" unanswered**); `s2e10_smoke = reckless`
+(`jack_cigs` 16, `jack_cigs_jf` 5, `reliquary` 11); `doug_super_bowl`; `skye_read_danny_letter` (she'll write Danny from New Mexico); Skye has the
+flannel, Jack the CREW sweatshirt ("Sixteen days. Washed."). Resolve Jack 0 · Lena 3.
+
+**WHAT GIVES SEASON 2 ITS SHAPE NOW (no breakup, no forced turn).** *Title theme, at last literal: "Do you also wish to go away?" (John 6:67) —
+and Peter's answer, "Master, to whom shall we go?" (John 6:68), which is the finale's title.* **Jack refuses to leave either thing he loves.** He
+won't leave Skye and he won't leave the Church, and the season is the honest cost of standing in both at once without lying to either. That is
+the spine; it does not resolve in S2, and the finale says so on purpose. Four engines carry it:
+1. **The long Lent and the Wednesday light (faith spine, #93).** Ash Wednesday (Feb 17) to Easter (Apr 4) and on through the Easter season: every
+   Wednesday the light, every Sunday the pew. Each Wednesday is a different scene (never the same confession twice — see the Wednesday ledger
+   below); Osei bracing and merciful, the doctrine exact (no absolution without a purpose of amendment; a man can still pray, come to Mass, make a
+   spiritual communion, receive a blessing — the door is never shut). **The Easter duty** (the precept to receive at least once in the Easter
+   season — in the U.S. through Trinity Sunday, **May 30, 2010**) is the quiet clock under the spring; it runs **past the finale** into the summer.
+2. **Skye trying to understand (Jack/Skye, #21).** What he's going through hurts her — she watches him stay in the pew every Sunday and wonders if she
+   is the thing he's sorry for — and **it brings them closer.** Her **Catechism campaign starts now** ("explain it until I understand"): argument
+   duels with Skye as opponent, one section at a time; **she keeps coming to Mass with him, including every Sunday he doesn't go up**; mid-Lent **she
+   goes to see Osei on her own.** The heat keeps growing — escalation without repetition, the brief's frank literary standard.
+3. **Skye's world pressing in.** The New Mexico pilot (the not-nice girl) heads toward a pickup decision; Corinne, Debbie and the network; the
+   singalong's long tail; LA; fame in a college town. **The pickup call lands in finals week** and sets the summer (she shoots in New Mexico; he goes
+   home to Youngstown) — a question about distance, never a breakup engine.
+4. **The silence (#92) and the alliance (#94).** Total cold with Lena all spring — **an ANGRY silence, not an indifferent one** (player,
+   2026-11-05, second directive): the feelings and the hurt don't go away, they **fuel mutual anger** all season — every seat chosen, every
+   relayed remark at Hale's table, every room one of them leaves when the other enters is heat with nowhere to go. Three wordless, deniable
+   crossings and nothing else, each as much anger as care. Lena ends it with Julian on her own and is single through the spring. **The alliance
+   is discovered late (S2E28)**; Theo–Jack's worst fight feeds the finale; **the silence breaks in the two-part finale** (proxy fight #2, E29), and
+   on the last night of freshman year (E30) they finally have **the honest conversation — melancholic and regretful, grief that they didn't speak
+   plainly before. It does not reunite them, and Jack does not leave Skye.** The friend group goes back to the way it was, with awkwardness and
+   uncertainty; **Theo and Laney find out about the conversation and the alliance quietly re-forms** for sophomore year (the closing beat).
+   **The long-run endgame is deliberately unsettled in this timeline: possible, never forced, never scheduled.**
+Around them: Theo's anniversary and the mystery spine (§20.7, re-pointed below), Deepwater Horizon and Lena's family, NUMMI and Yusuf, health care,
+the Costigans (Easter, Nonna and *Maria Caterina*, Jack's 19th, Mother's Day), **Kevin and Clare advanced for real**, Margot's feature, Hale's table.
+
+**Standing rules for every S2-ALT episode from E11 (replace the 2026-10-29 standing rules where they differ):**
+- **POV Jack only.** New Orleans, the set in New Mexico, Lena's spring and Skye's conversation with Osei happen off his screen (texts, calls,
+  Facebook, what people say, what Skye chooses to tell him).
+- **Jack's narration about Lena stays cold and finished on its surface — and angry underneath** (the anger is shown in action: what he notices,
+  what he refuses to notice, how fast his answers come through the chair), until the finale; the player's choices may crack it, never the
+  narration's thesis. **No longing on the page; the anger is the tell.** Lena's half is the player's ache *and* her anger (her face, her exits,
+  Laney's look, Theo's silence).
+- **Jack's happiness with Skye is real and written as real** (player, 2026-11-05): he is in love with her and completely happy with her; she cares
+  and is **legitimately trying** with his faith (never going through the motions); the anger at Lena is never a sign that the Skye story is a
+  placeholder. Two true things at once, neither cancelling the other.
+- **Skye's whole mix every episode she's in** (heat, intellect, wit/play, fun, vulnerability, goodness under pressure). **The sex is never a punchline,
+  a fall staged in one scene, or a cure** — it is joy and it costs, both true, and the cost is never used to make the joy look false.
+- **The faith is true and hard.** No scrupulosity (Jack does not spiral, catastrophize or self-punish); no excuse (nobody, Osei least of all, tells
+  him it's fine). Osei is bracing and merciful in the same breath. **The faith is never mocked**, including by Skye — she argues it at full strength,
+  never sneers. No strawmen: Skye wins some duels.
+- **Nothing is forced.** No engineered breakup, no deadline, no "the purpose of amendment ends it" beat, no Skye-coerces beat (she never pressures him
+  toward bed or away from Wednesday; she can be hurt and say so). The relationship is allowed to find its own weather.
+- **Hard rules unchanged:** no sex for Lena with anyone; no one else for Jack beyond Skye; no assault in anyone's background; everyone 18+ (Skye turns
+  20 Apr 4; Jack 19 Mar 19); no cheap villains (Corinne, Debbie, Julian, Laney, Theo all have their reasons); Jack and Lena never die.
+- **No procedural consent beats** (none needed: desire is mutual and said).
+
+**ALLOCATION (30-episode season kept; the freed E12–E13 re-spread across Lent and spring):** **E11** the away weeks (montage) → the returns ·
+**E12–E16** Lent I–IV (the Catechism begins; LA; the Forum; Laetare) · **E17–E19** Passiontide (Jack's 19th; health care; Skye sees Osei) ·
+**E20–E22** Holy Week and Easter (Skye's 20th) · **E23–E24** Eastertide I (Big Sur; Floatopia; the duffel) · **E25–E27** Good Shepherd (Deepwater
+Horizon; the anniversary; the marsh) · **E28** the alliance discovered; Mother's Day · **E29–E30** the two-part finale, finals week.
+
+**S2E11 · "Depart from Me"** · **Sat Feb 6 – Mon Feb 22, 2010** (the away weeks compressed) · Fifth Sunday OT C (Isaiah 6; **Luke 5:1–11 — "Depart
+from me, Lord, for I am a sinful man"**); Ash Wednesday (Feb 17; Joel 2, 2 Cor 5:20–6:2, Matt 6); **First Sunday of Lent (Feb 21; Luke 4:1–13 — the
+desert)** [V all]. **Cold open — Sat 4:45/6 a.m.:** the alarm, the car in the rain, the goodbye (pays E10's nextTime; "something better than *mm*" —
+the player's line, or *mm*). **ACT ONE — THE AWAY WEEKS (≈25% of the episode; montage, never a full scene of Jack alone longer than a page):**
+brief overviews threaded through **texts and calls** — **Skye from New Mexico** (the motel outside Santa Fe; the not-nice girl and how good it feels
+to be bad on camera; Debbie on set; the crew; she writes Danny "about Carrillo, in capitals"; one picture rung — the most salacious yet, open it or
+delete it unopened, nobody else ever sees it, stat/resolve only; the calls get long and then longer); **Theo, Kevin and Margot from New Orleans**
+(Theo: the Broussards' kitchen, Brees, Laney adopted by Celeste, a photo of a Sazerac with no caption; Kevin: Tết at Mary Queen of Vietnam, Bà Nội on
+speaker, **he asks Jack by text what to send Clare for Valentine's** — Kevin and Clare advanced; Margot: "a matriarchy disguised as a parade");
+**nothing from Lena, and — for the first time since January — nothing from Laney** (a silence the player can feel). **The guilt, alone, compressed** (fork directive:
+it comes when everyone he loves is somewhere else) — Saturday afternoon, 412, Theo's DVD stack, the sweatshirt; the 3:30 hour passing on Ocean Road;
+Sunday Feb 7 the Mass in town, the pew, **Luke 5 finds him anyway** (one paragraph, not a sermon). **Super Bowl XLIV in 420 with Doug and Yusuf** —
+a brief beat inside the montage: Doug's liberated futon, the onside kick, Porter's pick-six, **Saints 31, Colts 17**; **Theo calls from the street**
+(the whole city through a RAZR; never Lena on the line); Skye's halftime text from the motel (she watched it for him). 🔒 **Feb 6 La Cañada debris
+flows** [V] — Theo's short voice about his mother's street; no inference. Glenwood digging out of the Feb 5–6 blizzard (Frank, the snowblower; Gina's
+photos). **Wed Feb 10 — he goes back to the light** (the first of the Wednesdays; the scene the montage stops for, ≈1,200 words): he can't say it
+yet; Osei: no absolution, a blessing, and **"Then we will keep meeting. That is also what the chair is for."** Yusuf and Marjah (Sat Feb 13 [V]) —
+one beat, Tariq (#42). Olympics on the lounge TV (Feb 12). **Mon Feb 15 — the friends fly home** (Kevin's birthday on a plane): Theo strange and
+gentle, Laney cold for real now (the towel thrown in), Kevin quiet, Margot; **Lena stays** through Ash Wednesday (one photo Tess posts; off-screen).
+**Ash Wednesday — Osei's thumb, "Remember that you are dust"** (the 12:10; then the light that night — two meetings in one day, one wordless).
+**Jack's Lent begins anyway:** no cigarettes (the unopened pack; `reliquary` 11; the count resumes, nobody knows), Fridays fasted. **Thu Feb 18 —
+Lena back; Julian is over** (her own decision, made in New Orleans without Jack — "You've never once told me I was wrong."; Julian graceful;
+Jack hears it secondhand, Laney's face and Theo's one sentence); false dawn #3 as tragedy (the alliance can't celebrate). **ACTS TWO–FOUR — THE
+RETURN (Sun Feb 21 – Mon Feb 22):** Skye drives in from LAX before dawn and **slides into the 11:30 pew beside him in the clothes she flew in**
+(her hair still the not-nice girl's) — the First Sunday of Lent; **he stays in the pew; she stays with him** (the first of those Sundays). The
+reunion (heat step A1 — see the ladder below). **The talk after:** he tells her about Wednesdays — that he goes, every week, and tells the truth,
+and can't promise, so he isn't absolved; her struggle starts here, said plainly ("So every Wednesday you go tell a man you're not sorry enough about
+me." / his answer is the player's) — and her decision: **"Then explain it to me. Until I understand."** (the campaign's first line, moved up from
+the old post-breakup step 5). **Mon Feb 22:** Pair 41; Hale's table with both of them back and the chair rule standing (Lena two seats from the
+end, not a glance). End card from Luke 4 or Joel 2 (planner).
+
+**S2E12 · "The Catechism"** · **Tue Feb 23 – Fri Feb 26** · Lent I weekdays (Tue Matt 6:7–15, the Our Father; Fri Matt 5:20–26, "go first and be
+reconciled") [V]. **Skye buys a Catechism** (the green second-edition paperback, Borders on State Street [V]; she tabs it in four colors);
+**Catechism duel #1 (`skye_cat`, Skye as opponent): the Eucharist — "Why can't you just go up?"** (Real Presence, CCC 1373–1381; worthiness,
+1385; she argues like an actor — motive, given circumstances — and wins a point on every path). **Lena's Friday Stations at St. Brendan's** (her
+Lent: bread-and-water Fridays, Facebook given up): Jack and Skye in the back; Lena sees them (no inference; her face for the player). **Wednesday
+light #2 (Feb 24):** spiritual communion — Osei teaches him the act of desire (St. Alphonsus); "Hunger is not nothing." Kevin and Clare: where was
+he on Valentine's — Clare's honest question, Kevin's honest answer (the flowers arrived; he didn't), the attempt deepening (🔒 #11 never named).
+Theo–Jack warmth (the DVDs returned; what Theo isn't saying about New Orleans). Becca. Gina.
+
+**S2E13 · "Transfigured"** · **Sat Feb 27 – Wed Mar 3** · Second Sunday of Lent (Luke 9:28–36, the Transfiguration — "it is good that we are here").
+Saturday daylight with Skye (the Point; Fenner's project); the Sunday pew again — **Skye's second Lenten Sunday; she asks to go up for a blessing with
+him** if he does, or kneels with him in the pew (the player's choice which, for him). Corinne and the singalong's long tail (Cassidy's storyline
+"adjusted"; the network's note; Skye's reply). **Wednesday light #3 (Mar 3):** Osei asks him to serve — the Newman soup night, works of mercy, "do
+something with your hands that isn't a confession." Margot's anniversary feature begins (#12). Doug and the futon's afterlife; Yusuf (#42, NUMMI's
+date announced).
+
+**S2E14 · "Leave It for This Year"** · **Thu Mar 4 – Sun Mar 7** · Third Sunday of Lent (Luke 13:1–9 — the barren fig tree: "leave it for this year
+also") [V]. **Skye's world: the LA weekend** — Jack goes south with her for her ADR day on the pilot / a network meeting; Debbie (no villain: a
+mother who built a company out of a child and is proud and afraid); Corinne in person; a party in the hills (Theo along for one scene — LA is his
+too); **her childhood bedroom in Studio City** (heat step A2); **Catechism duel #2: confession and the purpose of amendment — "Why can't you just mean
+it for a week?"** (CCC 1451–1453; contrition, attrition; she argues the honesty of not promising is itself the best thing in him — and he has to
+answer that). Sunday Mass in LA (St. Charles Borromeo, North Hollywood [V] or the room's choice) — he stays in the pew; she's there.
+
+**S2E15 · "The Forum"** · **Mon Mar 8 – Thu Mar 11** · Peter Haddad's 21st (Mar 8). **Lena debates Hale at the Marisol Forum and wins** (Thu Mar 11 —
+retained; ensemble setpiece; Caleb cracks, #41) — Jack watches from the back, **Skye beside him** (she clocks Lena's brilliance and says so, generously,
+never the name of what she sees; Jack's interior stays cold). **Wednesday light #4 (Mar 10): out of the box** — Osei moves them to the office for once
+(chess, highlife, Korle-Bu; spiritual direction, not confession): "Tell me what she is to you. Not in here. Out there." Kevin and Clare: Clare's
+brothers at the Forum. Hale possessive of Lena's win.
+
+**S2E16 · "Laetare"** · **Fri Mar 12 – Sun Mar 14** · Laetare Sunday (rose vestments; **Luke 15 — the prodigal son**). Osei's homily ("rejoice is a
+command" — Gaudete's echo); the elder brother as the reading's knife (Jack recognizes himself in *both* sons). **Heat step A3 — the easy one**
+(a Sunday afternoon; laughter; the first time it's simple). Skye at Mass: Luke 15 is the first reading she has prepared for in her Catechism
+(she has notes). A Costigan call (Ma: "Are you going, Jackie?" — he tells her the truth, or part of it; `s2e10_ma` history).
+
+**S2E17 · "St. Joseph"** · **Mon Mar 15 – Fri Mar 19** · **Fri Mar 19, St. Joseph — Jack's 19th.** Skye's plan for him (her gift, heat step A4 —
+he gives as much as he takes); Ma's dawn call, Nonna's Calabrese, Danny's collect call, Gina's caps, Frank; Theo's present. **Lena's St. Joseph's
+altar in the Delgado kitchen, for everybody** (New Orleans; fava beans; the breads shaped like tools) — **a lucky bean reaches Jack's hand without a
+name on it** (wordless crossing #1; 🔒 Lena asked; Laney? Kevin? — never resolved on the page). **Wednesday light #5 (Mar 17):** St. Patrick's; the
+eve of his birthday; Osei on Joseph — "a just man who did not understand, and stayed."
+
+**S2E18 · "Letter to Ireland"** · **Sat Mar 20 – Tue Mar 23** · Benedict XVI's Pastoral Letter to the Catholics of Ireland (published Sat Mar 20 [V]);
+**the House passes health care (Sun Mar 21) after the Stupak executive-order deal** [V]; signed Tue Mar 23 [V]. **Catechism duel #3: the Church's
+authority after the scandals** — Skye's sharpest round, at full strength (public record only; no invented conduct or words for any real person);
+**Jack doesn't win it**; his answer is the faith's best, not a dodge (the Church's holiness is Christ's, not the clergy's; why he stays). Health care:
+Jack and Skye argue Stupak from opposite sides (both furious at different people); Lena's view reaches Jack only through Hale's table or Margot.
+Fifth Sunday of Lent (John 8 — the woman caught in adultery: "Neither do I condemn you. Go, and from now on do not sin any more.") — **the Gospel
+that holds the whole season in one sentence**; Skye hears it beside him and asks him afterward which half he believes. (His answer: both.)
+
+**S2E19 · "Annunciation"** · **Wed Mar 24 – Sat Mar 27** · the Annunciation (Thu Mar 25: "May it be done to me according to your word"). **SKYE GOES
+TO SEE OSEI ON HER OWN.** Off Jack's screen: he sees the Saab in the St. Brendan's lot on Wednesday afternoon (or Becca mentions it; planner's
+object), or she tells him outright. **A conversation, not a confession** (default) — unless she chooses otherwise, which the room may allow and
+must then treat under the full seal; either way **Osei tells Jack nothing** ("Ask her.") and **the scene is never mocked.** What she tells Jack is
+hers to choose (default: that she asked him whether she's the sin; that he answered her like a person; that he asked her a question back she
+won't repeat yet; that at the end she asked for a blessing and got one). **Their first real fight** — he feels exposed ("You went to my priest."),
+she feels shut out of the thing that's tearing at him; neither is wrong; it ends with them closer (heat step A5 only after the repair, never the
+fight as foreplay). **Wednesday light #6 (Mar 24):** the same day — Osei says not one word about her.
+
+**S2E20 · "Hosanna"** · **Sun Mar 28 – Wed Mar 31** · **Palm Sunday** (the long Passion, Luke 22–23; the palms — Skye braids hers into a cross the way a
+prop master taught her at twelve; Jack's goes in his Bible). Holy Week's weekdays. **SPY WEDNESDAY (Mar 31) —
+THE SEASON'S HINGE: the light, and the question for Easter.** FORK (player's): he can say it and mean it — absolved, and Easter is his to receive /
+he still can't, honestly — no absolution, Osei's mercy, and Easter in the pew. **Default (the re-plan):** he can't. **Both paths must be fully
+playable**; neither is the "right" one; a sincere promise later broken is a fall, not a lie, and is confessed as one. Skye knows which way it went
+before he says it.
+
+**S2E21 · "Tenebrae"** · **Thu Apr 1 – Sat Apr 3** · the Triduum. **Holy Thursday: NUMMI's last car** (Yusuf's father — #42, retained) and the
+Mass of the Lord's Supper (Osei washing feet; Kevin's, Becca's, a stranger's); the altar stripped. **Good Friday: the veneration of the cross —
+Jack and Lena in the same line** (wordless crossing #2: she is three ahead of him; she kisses the wood; he does; nothing said; Skye in the pew
+watching him go up for the one thing he *can* go up for). **Holy Saturday:** the Easter Vigil — Laney's first (retained, without any asking); the
+new fire; Skye at her first Vigil (the dark church, the candles passed hand to hand).
+
+**S2E22 · "Easter"** · **Sun Apr 4 – Tue Apr 6** · **Easter Sunday = Skye's 20th birthday.** Mass together (he goes up on the absolved path, with
+Skye watching on her birthday; on the default path he stays in the pew on Easter, and **she stays with him on her birthday** — written as the
+season's emotional center either way). Nonna on the phone: *buon compleanno, Maria Caterina* and *Cristo è risorto* in one breath; the Costigans'
+Easter (Ma, Gina, Frank, Danny's Easter call). **Her birthday night (heat step A6): the joy and the cost in the same hour**, written straight.
+Easter Monday: the Easter duty named once, lightly (Osei or Ma), and left.
+
+**S2E23 · "Divine Mercy"** · **Wed Apr 7 – Sun Apr 11** · Easter Octave; **Divine Mercy Sunday (Apr 11; John 20:19–31 — Thomas)**. **Big Sur
+weekend** (Jack and Skye; Bixby, Nepenthe, the Santa Lucia Motor Court — §25.7, never a re-run of S1E11's beats; heat step A7 — cold ocean, a fire,
+outdoors); **Divine Mercy Sunday Mass at New Camaldoli, the Hermitage** (the monks; S1E11's place, now hers too); **Catechism duel #4: Hell and
+mercy** (CCC 1033–1037; Faustina's "Jesus, I trust in you"; she asks the question that matters to her: "If you died tonight —"). Wednesday light
+#8 (Apr 7; Easter Octave — on the absolved path, the first confession of a fall or of a kept week; on the default path, Osei's Easter-season counsel).
+
+**S2E24 · "Floatopia"** · **Mon Apr 12 – Sun Apr 18** · **the duffel back on the shelf with Hale's postcard** (§20.7, retained: after Easter);
+**Floatopia (Sat Apr 17)** — the ensemble setpiece, comedy at full warmth, **not the alliance reveal** (Skye on a raft; Laney and Lena on another;
+the silence observed across forty yards of water); **Priya opens the journal** (🔒 retained). **Catechism duel #5: sex and marriage** (CCC 2331–2363:
+why marriage is the place for it; the "language of the body"; she argues that what they have already says everything marriage says — and he has to
+answer without insulting what they have). Kevin and Clare: Clare's mother's birthday party (Kevin as the perfect boyfriend; Margot watching).
+
+**S2E25 · "The Rig"** · **Mon Apr 19 – Fri Apr 23** · **Deepwater Horizon (Tue Apr 20)** [V] — Lena's uncle's boat (the Broussards' Gulf); Lena gone
+from Hale's table for two days; **wordless crossing #3: Jack writes the boat's name in the intentions book at St. Brendan's** (All Souls' book; Osei's
+"Write them all") **— Lena reads the book at the 12:10 and knows the hand** (no word, no inference narrated). **SB 1070 signed (Fri Apr 23)** [V] —
+Yusuf, Margot, Skye on immigration (politics as a game between people who differ). Wednesday light #10 (Apr 21: the rig still burning).
+
+**S2E26 · "Good Shepherd"** · **Sat Apr 24 – Tue Apr 27** · **the anniversary** (Sun Apr 25 – Mon Apr 26, Good Shepherd Sunday): Evan confronts Theo at
+the cross before dawn; **Jack follows Theo for the first time** (🔒 retained, §20.7); Hale's night at the Anchor (#55); Lena on the roof with her back
+to the Point (seen from below; no word). Jack comes back to Del Playa carrying something he can't tell her; **Skye doesn't make him** (heat step A8 —
+comfort; no fixing).
+
+**S2E27 · "The Marsh"** · **Wed Apr 28 – Sun May 2** · the oil reaches the marsh (Lena's guilt — off Jack's screen, via Laney's face and Theo's
+silence); **Osei's birthday (Sun May 2)** — the Newman party; Skye brings a gift she chose herself (a highlife record; he plays it); **Catechism duel
+#6: contraception / *Humanae Vitae*** (CCC 2366–2372; 🔒 she has been on the pill since sixteen — this is where it surfaces, said plainly by her, never
+a pregnancy plot; Jack's honest response is the player's); Kevin and Clare (the drive problem, felt by Clare, unspoken); finals approaching; **Skye's
+pilot tests well** (Corinne's call; the decision "mid-May").
+
+**S2E28 · "Refundable"** · **Mon May 3 – Sun May 9** · **JACK PUTS THE ALLIANCE TOGETHER** (late, per the re-plan): the unused e-ticket (COSTIGAN; the
+refund credit in Theo's name — planner's object) + the meeting he walked in on + Kevin's "I was asked" + Lena's card naming Theo's flight + Laney's
+random warmth since January → **Theo–Jack's worst fight** ("You bought me a seat to fix me."); Theo tells the truth about the alliance **and only that**
+(never Lena's secrets: not Christmas, not the laptop, not the call) — "She wrote that card herself. Nobody can make Lena Broussard write anything.";
+**Kevin, asked, doesn't lie** ("Respectfully — I told them to leave it alone. Forty times. I counted."); Laney confronts him (sugar and steel). **The
+house lease (Jack, Theo, Kevin, Yusuf) nearly dies with it** — and is signed anyway, Sunday, in silence. **Mother's Day (May 9): Maria calls Lena herself
+about her uncle's boat** (re-placed; Jack learns it from Ma — "She called me back, Jackie."). Jack now suspects Lena was in on the alliance (a misread —
+fuel for the finale; never confirmed or corrected on the page in E28).
+
+**S2E29 · "To Whom Shall We Go (I)"** · **Mon May 10 – Thu May 13** · finals week; Ascension Thursday (May 13; transferred to Sunday in California —
+Jack notes it as a Youngstown boy would). **The last Wednesday light of the year (May 12): "Do you also wish to go away?"** — Osei reads him John 6; **Jack
+answers with Peter: "Master, to whom shall we go?"** — and still can't promise (default; absolved path: confesses a fall or a kept stretch, honestly).
+**Skye's pickup call** (the pilot goes to series; she shoots in New Mexico from late June; *Sweetwater* wants her for two episodes in July) — the summer
+set: distance, not an ending. **Catechism duel #7 (the season's last): "What would it take for you to leave?"** — and his question back. **Julian's
+band plays the last-week show at Bastille; "Magdalena" is still in the set, with Lena's blessing, as friends** (plant for the line). **THE SILENCE BREAKS
+— PROXY FIGHT #2 ("the worst," topping Hale's):** default venue **Hale's paired oral (Thu May 13, the bungalow)** — Hale, at the last session, lifts the
+chair rule ("It's the last day of the year. Speak to each other.") and it detonates: Lena rips into Skye's performing (the pickup in the trades that
+morning; a magazine shoot; the singalong's tail — vicious, but from somewhere real); Jack, raw from the alliance, accuses her of being in on it; he's
+as angry as he's ever been; **the player's verbatim last line, as written:** *"Sorry, I forgot how private you and Julian are. When she stars in a movie
+called 'Jack' I'll make sure you come watch the whole thing next to me so we can see your face enjoying how authentic and humble everything is."* —
+**Lena goes quiet**, remembering "Magdalena" and that she asked him to come (her second-guessing private: her face, never voiced). Hard limits stand (no
+grief/Memorial or Danny weaponized). `s2e10_chair_personal` may be thrown back at him.
+
+**S2E30 · "To Whom Shall We Go (II)"** · **Fri May 14 – Sat May 15** · **the last night of freshman year.** **THE HONEST CONVERSATION — the Delgado
+roof** (S1's bookend roof; Priya's final laminate; player directive 2026-11-05: "like the old roof talk," but **melancholic and regretful**). After
+E29's blowup neither can leave it there: Lena comes up, or he finds her. It starts as the fight's last embers and turns, slowly, into the first plain
+talk since Christmas — **the January truths (Silence Ledger L2, re-defined):** the Friday call both ways ("Will you be around after?" — what she meant;
+what he heard) and **the public "liar" taken back from both sides**; the status and why it mattered; the Christmas calls meant as much to him; "how
+dare you be mad at me" — what each actually thought the other did; **the card, his slid-back no, and what writing it cost her**; the song — she asked
+him to come; her apology for that night, or its first sentence (planner/path). **The register is grief, not hope:** each hears how simple it would have
+been to say it in January, and that they didn't; nobody makes a speech; nobody says what it would have meant. **It does not reunite them.** Jack is in
+love with Skye and **says so if asked, without apology** (the word may be spoken to Lena now, present tense — #8 re-cut); he does not leave Skye and does
+not want to; Lena does not ask him to. **What is NOT said:** the deep truths (Silence Ledger L3 — "decided," the guardrail, "a week," the glance, her
+private blame, Laney's report, the fragments, the Reliquary), **that he slept with Skye** (it is Skye's and his; held — the principle "he tells Lena himself,
+before anything ever starts between them" stands, if anything ever does), and the alliance (Jack's suspicion of her dies here unspoken — he can see she
+didn't know). They end on something small: not friends again, not enemies; **"Have a good summer, Jack."** / his answer. The same night **Theo tells Jack
+the truth on the wall at the Point; Jack, in exchange, tells Theo about Danny** (🔒 §20.7 retained; the Theo–Jack repair after E28 happens here, in the only
+currency either has). **Dawn: Skye's Saab at the Delgado curb**, packed; the 7 a.m. Saturday Mass at St. Brendan's first (he stays in the pew or goes up,
+by path; she beside him, trying — really trying); **his happiness with her written as real**; "Youngstown. The Fourth. Your grandmother promised me a
+rosary." — the summer as a question, not an answer. **The friend group at the curb goes back to the way it was — almost:** Theo, Laney, Kevin, Margot,
+Lena, Jack in one place, the jokes landing a beat late, everyone careful, nobody sure what the year left them. **TAG — THE ALLIANCE QUIETLY RE-FORMS:**
+Theo and Laney find out about the roof (Laney saw Lena come down at 3 a.m. with her face washed; Theo has Jack's one sentence from the wall, or none —
+planner's mechanism; **never the contents**); SBA departures, or a phone call from LAX to New Orleans: a legal pad, one word underlined — *Sophomore.* —
+"He knows about us now. So we'll have to be better." **Kevin is still not a member** ("Respectfully, no. I'm going to be in the room anyway, aren't I.");
+Margot "for science." Smash to black. **The Easter duty clock (May 30) runs on into S3E01.**
+
+**HEAT LADDER AFTER THE FIRST TIME (S2-ALT, steps A1–A9; escalation without repetition; the brief's frank literary standard — explicit and specific
+in literary prose, concrete bodies and feeling, never pornographic mechanics, no slang, no anatomy inventory; each step names what's new):**
+A1 E11 the reunion (daylight after sixteen days; she's half the not-nice girl and he finds the real one under it; he isn't learning anymore) ·
+A2 E14 her childhood bedroom (being let into her past; the quiet of a house that raised her) · A3 E16 the easy one (laughter; play; the first time it's
+simple) · A4 E17 his birthday (her planned gift; he gives as much as he takes) · A5 E19 after the first fight, after the repair (tenderness with the
+bruise still in it) · A6 E22 her 20th, Easter night (the joy and the cost in the same hour) · A7 E23 Big Sur (cold water, fire, outdoors) · A8 E26
+comfort (he can't tell her what he carries; she doesn't ask; the body as the only language left that night) · A9 E30's eve (the last night before
+the summer; the goodbye that isn't one). Not every episode; never the same scene twice; the talk after each goes somewhere the last didn't.
+**Skye never coerces; Jack never performs guilt in her bed** — the cost lives on Wednesday and Sunday, not in the sheets.
+
+**THE WEDNESDAY LEDGER (Osei; never the same confession twice):** Feb 10 back (withheld; "Then we will keep meeting") · Feb 17 Ash Wednesday (the thumb;
+the light that night) · Feb 24 spiritual communion ("Hunger is not nothing") · Mar 3 works of mercy (the soup night) · Mar 10 out of the box (the office;
+chess) · Mar 17 St. Joseph's eve ("a just man who did not understand, and stayed") · Mar 24 the day Skye came (Osei says nothing) · **Mar 31 Spy Wednesday
+(the hinge fork)** · Apr 7 Easter Octave (by path) · Apr 14–May 5 (planner's texture: a Wednesday Osei is late from the hospital; a Wednesday Jack sits
+outside and listens to someone else's beads; the day after the rig; the day after the alliance fight) · **May 12 "Do you also wish to go away?" / "To whom
+shall we go?"** If the player promises on any Wednesday and later falls, the next Wednesday confesses a fall — never treated as hypocrisy, never as nothing.
+
+**THE CATECHISM CAMPAIGN (moved up; brief mechanic kept: argument duels with Skye as opponent, rigor/wit/heart; counters `skye_cat_jack` /
+`skye_cat_skye`; she wins some; her register is improv, actor's logic, sincerity under performance; Jack doesn't always win):** #1 E12 the Eucharist ·
+#2 E14 confession and the purpose of amendment · #3 E18 authority after the scandals · #4 E23 Hell and mercy · #5 E24 sex and marriage · #6 E27
+contraception (🔒 the pill) · #7 E29 "what would it take for you to leave?" **The campaign does not end in S2** (its resolution feeds S3+; the brief's
+"either she's persuaded or he's dissuaded" stays genuinely open). Lena's "if she ever makes a move, the meet-ups stop" is **void while Jack and Skye are
+together** and held for whenever (if ever) it applies.
+
+**KEVIN AND CLARE (re-examined; the player asked to advance them):** **not ended in S2.** The sad, sincere attempt gets real screen time — Valentine's by
+text from New Orleans (E11), Clare's honest question (E12), her brothers (E15), her mother's party (E24), the drive problem felt by Clare (E27) — Kevin
+trying with everything he has, Clare a full person who deserves better and slowly knows it (🔒 #11 never named; Margot watching). **The end, when it
+comes, is Clare's decision, kind, with a reason of her own** ("I want somebody who wants the drive to be longer" — the room may find better) — **default
+Summer 2010**, before Kevin's coming out to Jack and Lena (Fall 2010). The planner may land it in E29–E30 only if it earns the finale.
+
+**SUMMER 2010 (S3) — RE-PLANNED IN OUTLINE (§23.3 and the 2026-10-29 S3 paragraph superseded where they differ):** Jack home in Youngstown (the scrapyard;
+Frank recalled for the Cruze; Danny; Nonna); **Skye shooting in New Mexico** (calls, letters, one visit each way — Skye in Youngstown for the Fourth is
+the default: Nonna, Ma, Gina, Frank, Danny on a visiting Sunday if the room earns it); the Easter duty and the Wednesdays (St. Brigid's, Fr. Dom — a new
+confessor for the summer, or Jack calls Osei). **Jack and Lena: after the roof, careful at most** (the summer's first message is hers or his — player);
+**no New Orleans trip scheduled, no asking, no "official."** The re-formed alliance plans by phone (comedy; Kevin on the call against his will). **S4 (Fall 2010, sophomore year):** the house on the lease; Skye back at Marisol or not (open — the pickup
+may keep her away); **Jack and Lena: the endgame is deliberately unsettled in this
+timeline** (player, 2026-11-05) — kept possible, never forced or scheduled; **nothing between them before sophomore fall at the earliest**, and only through
+whatever the Jack/Skye story truthfully becomes — no date fixed, no breakup engineered (§24.0-ALT). The re-formed alliance's "new approach" opens S4.
+
+> ⛔ **SUPERSEDED 2026-11-05 (player's Alt Season 2 re-plan + the coordinator's "speed through the away weeks" directive) — the 2026-10-29 entries
+> below, from S2E11 through "S3 (Summer 2010)" and S4, are kept for the record only. Plan from "23.2-ALT · REVISED FROM S2E11" directly above.** (The S2E10
+> entry above them is played canon and stands.)
 
 **S2E11 · "Depart from Me"** · **Sat Feb 6 – Mon Feb 8** · Fifth Sunday OT C (Isaiah 6; **Luke 5:1–11 — "Depart from me, Lord, for I am a sinful
 man"**) [V]. **Rain** (the Feb 5–6 storm [V]); Skye's car at dawn; her flight delayed, then gone. **The guilt comes, alone** (fork directive):
@@ -4775,7 +5153,49 @@ Smash to black.
 *(Re-planned after S1E11 for the player's MAJOR RE-PLAN, exact sequence and long-range timeline. Superseded plans — the S3E22
 first kiss, Gideon, the S4E03 reveal, Andrew, the S7E09 Ephesians, the AD wedding — are retired; see the revision log.)*
 
+### 24.0-ALT (REVISED 2026-11-05) THE ROMANCE ROADMAP — ALTERNATE TIMELINE, AFTER THE PLAYER'S SEASON 2 RE-PLAN (binds; supersedes the 2026-10-29 §24.0-ALT below wherever they differ — its "shape," its S2E18–S3 rows, its Skye ledger row "dating S2E03–S2E20," its availability-window rows for "Jack / Skye ends" and "Jack & Lena official Aug 15," and its endgame list item 1's placement)
+**The shape now.** In this timeline the endgame is **deliberately unsettled** (player, 2026-11-05): Jack and Lena remain *possible* — the bible keeps
+every door the main timeline needs (no one else for Jack beyond Skye; no one for Lena; the hard rules; the proposal/wedding canon in §24.1–§24.9 as
+the main-timeline reference) — but **nothing is forced or scheduled**, and the show does not tilt Jack's happiness with Skye to make room.
+- **S2, Feb 2010 — the no and the first time** (S2E10, played). The silence seals with the card slid back down Hale's table.
+- **S2, Feb–May 2010 — Jack and Skye together; the angry silence.** He is in love with Skye and completely happy with her; she is legitimately trying
+  with his faith (Catechism duels; every Sunday in the pew beside him; Osei on her own). The heat grows (A1–A9). The silence with Lena is **angry, not
+  indifferent** — the hurt fuels mutual anger all season; three wordless crossings (the bean, the cross, the intentions book). Lena ends Julian on her
+  own (Feb) and is single through the spring. The alliance is discovered late (S2E28).
+- **S2 finale (S2E29–E30) — the break and the roof.** Proxy fight #2 breaks the silence ugly (S2E29; the player's verbatim line). **The honest
+  conversation on the roof (S2E30): melancholic and regretful, grief that they didn't speak plainly in January. No reunion; Jack does not leave Skye;
+  Lena does not ask.** The group goes back to the way it was, awkward and uncertain. **Theo and Laney learn of the roof; the alliance quietly re-forms**
+  for sophomore year (tag). Kevin still objects.
+- **S3, Summer 2010 — apart in every direction.** Jack in Youngstown; Skye shooting in New Mexico (and in Youngstown for the Fourth, default); Lena in New
+  Orleans and the oil. Jack and Lena careful at most. **No New Orleans visit scheduled; no asking; no "official."**
+- **S4 onward — unsettled.** Nothing starts between Jack and Lena before **sophomore fall at the earliest**, and only through whatever the Jack/Skye story
+  truthfully becomes (decided with the player, never engineered). If Jack and Lena ever begin, the main-timeline spine (the restraint arc as a couple,
+  "the conversation," the proposal, the wedding) is re-dated from that point by the room — it is not presumed.
+
+**Who holds the line (S2-ALT rows from S2E11; replace the 2026-10-29 rows for E11–S3):**
+| Period | Jack | Lena (writer-set) | Who holds |
+|---|---|---|---|
+| S2E11–E30 (Feb 6 – May 15) | 0–2 with Skye (irrelevant: no line holds with her); rises with prayer, Mass, the light, by path | 4–6 (Lent; single; the anger) | **Nobody, with Skye** (the fork directive's lift); no Jack/Lena window exists — the silence, then the roof, which is grief, not heat |
+| S3 (summer) | — | 5–6 | no Jack/Lena window |
+
+**The Skye row of the other-relationship ledger now reads:** Jack · Skye · met S1E16; dating S2E03– **open-ended (no planned end)** · ceiling: sex (S2E10
+onward; fork directive) · nothing holds with her but his honesty on Wednesdays.
+
+**What still binds because Jack slept with Skye (re-cut):**
+1. **If anything ever begins between Jack and Lena, Jack tells her himself first** — never Laney, a photo, a rumor. **Not at the S2E30 roof** (he is with
+   Skye; it is Skye's and his; the roof is about January, not about the bed). Held to whatever beginning there is, if there is one.
+2. The restraint arc as a couple, Lena's vulnerable admission, the no-contraception line and "a no right now" (#91) keep their 2026-10-29 re-cuts **as
+   contingencies** for a Jack/Lena relationship that is no longer scheduled.
+
+**Availability windows (§24.9) — S2-ALT rows (replace the 2026-10-29 rows):**
+| Breakup / start | When | The other is… | The block | False dawn |
+|---|---|---|---|---|
+| Lena / Julian ends | S2E11 (Feb, in New Orleans; Jack hears Thu Feb 18) | Jack: with Skye, in love, happy | the angry silence + Jack's relationship | #3 as tragedy (the alliance can't celebrate) |
+| Jack / Skye | **no end planned** | — | — | — |
+| Jack & Lena | **unsettled; not before sophomore fall** | — | — | the champagne stays corked; the re-formed alliance's "new approach" opens S4 |
+
 ### 24.0-ALT THE ROMANCE ROADMAP — ALTERNATE TIMELINE (Showrunner, 2026-10-29; supersedes, in this timeline, §24.1's "S2, February–May 2010: together," §24.2's S2 rows, §24.3's hard-rule sentence as it applies to Skye, §24.4's "after S2E11" line, §24.6 #2's placement, §24.7's reveal date, §24.8's Skye row and closing line, and §24.9's S2 rows)
+> ⛔ **2026-11-05: SUPERSEDED wherever it differs from §24.0-ALT (REVISED 2026-11-05) directly above** — in particular its S2 Laetare→breakup→Good Friday→roof shape, S3 New Orleans/official Aug 15, the Skye row "S2E03–S2E20," and endgame item 1's roof placement. Kept for the record.
 **The shape now.** The endgame is not abandoned; the road is longer and goes through rougher country.
 - **S2, February 2010 — the no and the first time.** Jack refuses New Orleans twice (Theo's pitch; Lena's own card, harder) and the silence seals (S2E10).
   The same week he sleeps with Skye — not as a fall dramatized in one scene but as the yes the whole of S2E09 leaned toward, chosen with his eyes shut
@@ -6350,3 +6770,23 @@ Gate an option at `trait.X>=1` in early S1, `>=2` by midseason, `>=3` late.
 | 2026-10-29 | **path taken in S2E09 (played)** | `s2e9_kevin=sincerity` · `s2e9_tie=sincerity` · `s2e9_room=wit` · `s2e9_tell=sincerity` · duel `room` all Press (rigor 4) · `s2e9_kiss=candor` · `s2e9_photo=candor` · `s2e9_name=sincerity` · `s2e9_profile=wit` · `s2e9_wall=both` · `s2e9_smoke=restraint` · `s2e9_theo=sincerity` · `s2e9_sat=sincerity` · `s2e9_lunch=anchor` · `s2e9_ma=candor` · `s2e9_turn=reckless` · `s2e9_no=reckless` · `s2e9_question=sincerity` · `s2e9_after=stay`. Resolve Jack 1. `confession_owed` 1. | Save. |
 | 2026-10-29 | new canon (S2E10 plan; Continuity to confirm after drafting) | **Hale cancelled Monday Feb 1's 109H** (department e-mail; reason unstated) — Thu Feb 4 is the first session since the bungalow; Hale's rule **"all remarks through the chair"**; the seminar text is ***Brideshead Revisited*** (whole novel, Thu Feb 4). **Theo bought six e-tickets** (SBA–DFW–MSY, out Fri Feb 5, back Mon Feb 15 [V route]); Lena's stays open through Ash Wednesday (back Thu Feb 18). **Skye booked a fictional cable pilot** shooting outside Santa Fe (leaves Sat Feb 6, 6 a.m.; back ≈Feb 21). **Nonna had a candle blessed at the Candelora for *Maria Caterina*.** **Danny's reply to Skye's letter** arrives Thu Feb 4 (written ≈Jan 27–28). **Lena's card** (her hand; cream stock, her mother's). Theo's **DVD-a-night stack** for Jack (🔒 #51 cinephilia). **Kevin and Clare's drive (Tue Feb 2)**: Clare's grandfather in Santa Maria (the Czech violin's bridge); "I wanted the drive to be shorter." | The plan needs these. |
 - Next: Period Researcher — `period/s2e10-feb2-6-2010.md` (verify: Candlemas/St. Blaise/weekday readings NAB; Punxsutawney Phil saw his shadow Feb 2, 2010; *Lost* final-season premiere Tue Feb 2; Drew Brees as King of Bacchus 2010; Super Bowl week; the NFL/"Who Dat" T-shirt dispute dates; the Toyota recall news; the Feb 5–6 Mid-Atlantic blizzard reaching Pittsburgh/Youngstown; the Feb 5–6 SoCal storm and La Cañada debris flows Feb 6; SBA–DFW–MSY routing plausibility; Jeremih "Birthday Sex" on 2010 radio; music cues released by date). Context Packer: build `drafts/s2e10_pack.md` **including the fork directives and the Alt S2E10 notes session verbatim, §0A, §23.2-ALT (E10–E13), §24.0-ALT, §10.2 ALT ARC, registry overrides, and the Silence Ledger**. Architect: blueprint on the real save (S2E09 flat).
+
+### Revision log — ALT: the player's Season 2 re-plan from S2E11 (Showrunner, 2026-11-05; branch `hard-saying-alt`; the player FINISHED S2E10 — built on the real `saves/after-s2e10.json` and `episodes/s2e10.json`; S2E11 not yet written)
+| Date | Section | Change | Why |
+|---|---|---|---|
+| 2026-11-05 | **§23.2-ALT** | New sub-block **"23.2-ALT · REVISED FROM S2E11"** inserted after the (played) S2E10 entry: the season's new shape ("Do you also wish to go away?" / "To whom shall we go?" — Jack refuses to leave Skye or the Church); four engines (the long Lent + the Wednesday light + the Easter duty clock; Skye trying to understand; Skye's world; the angry silence + the late alliance); new standing rules; allocation; **episode map S2E11–S2E30**; the heat ladder A1–A9; the Wednesday ledger; the Catechism campaign #1–#7; Kevin and Clare re-examined; S3/S4 in outline. The 2026-10-29 shape/standing rules/allocation and every E11–S4 entry marked **SUPERSEDED** (kept under a ⛔ banner). | Player's "Alt Season 2 re-plan" (brief, 2026-11-05) + coordinator's two 2026-11-05 directives. |
+| 2026-11-05 | S2E11 | **The away weeks (Feb 6 – ~Feb 21) compressed into a montage at the top of S2E11** (texts/calls with Skye in **New Mexico** — kept, the player's "Canada" was from memory — and with Theo, Kevin, Margot from New Orleans; the Super Bowl in 420 with Doug and Yusuf a brief beat; the guilt alone compressed; Ash Wednesday; Lena back, Julian over); the episode's body is the return (Skye straight into the First-Sunday-of-Lent pew). Freed episodes re-spread across Lent and spring (30-episode season kept). | Coordinator directive (player): speed through the away weeks; Jack alone isn't interesting. |
+| 2026-11-05 | Osei reconciliation | "Afterward Jack avoids Osei" (S2E10 notes) → **a four-day flinch** (Sat 3:30 passed; Sun Mass in town), **back to the light Wed Feb 10, never misses a Wednesday thereafter** (default). | The re-plan's "keeps going back" supersedes; the flinch keeps the guilt human without becoming drift. |
+| 2026-11-05 | Jack & Skye | **No breakup anywhere in S2; open-ended.** Side-of-the-road, "bad column," the tabloid reading, the post-breakup Catechism sequence **suspended**. **Catechism campaign moved up** (duels from S2E12). Skye at Mass every Sunday incl. the ones he doesn't go up. **Skye sees Osei alone S2E19** (conversation unless she chooses confession). Jack's happiness written as real; Skye legitimately trying. | Player re-plan + second coordinator directive. |
+| 2026-11-05 | Jack & Lena | **Angry silence** to the finale (three wordless crossings); **proxy fight #2 S2E29** (verbatim line kept; Julian still plays "Magdalena" at the last-week Bastille show as her friend, so "are" stays true); **S2E30 roof = the honest conversation, melancholic and regretful, no reunion; Jack does not leave Skye.** Removed as scheduled beats: Good Friday first words (now a wordless crossing), telling her he slept with Skye at the roof (held), S3 New Orleans / "Do it properly" / official Aug 15 (held). **Endgame deliberately unsettled; nothing before sophomore fall at the earliest.** | Player re-plan + second directive. |
+| 2026-11-05 | Alliance | Discovery **S2E28** (late; was S2E16); **quietly re-forms in the S2E30 tag** after Theo and Laney learn of the roof (never its contents); Kevin still not a member. | Player re-plan + second directive. |
+| 2026-11-05 | Kevin and Clare | "Kevin and Clare end" (S2E18, 2026-10-29) **withdrawn**: advanced across the spring; the end, when it comes, is Clare's decision — default Summer 2010. | Player asked to advance them; nothing in S2 gives a reason to end it sooner. |
+| 2026-11-05 | **§0A** | Re-plan box added; old endgame sentence struck; pointers updated (REVISED sub-block; Silence Ledger re-cut). | — |
+| 2026-11-05 | **§10.2 ALT ARC** | Old after-the-first-time / end / after bullets struck and quoted for the record; **ALT ARC REVISED (open-ended)** bullets added. | — |
+| 2026-11-05 | **§24.0-ALT** | **§24.0-ALT (REVISED 2026-11-05)** inserted above the 2026-10-29 roadmap (marked superseded where it differs): unsettled endgame; who-holds rows; Skye ledger row open-ended; availability windows re-cut. | — |
+| 2026-11-05 | **§21 overrides** | **ALT REGISTRY OVERRIDES — REVISED 2026-11-05**: #1, #11, #12, #21, #23, #29, #57, #58, #59, #68, #73/74, #80, #81, #91, #92–#96 re-pointed; **new #97 the Catechism campaign, #98 Skye and Osei**; Status after S2E10 recorded. | — |
+| 2026-11-05 | §20.7 ALT line | Mystery beats re-pointed (feature E13; duffel/postcard E24; journal E24; anniversary E26; Theo's wall truth E30 unchanged; Luc's beat held). | New allocation. |
+| 2026-11-05 | `writers/nola_ledger.md` | Silence Ledger layers re-cut (L1 alliance S2E28 · L2 the roof S2E30 · L3 held · L4 held) and every row re-placed. | New timing. |
+| 2026-11-05 | Real history (Researcher to verify [V]) | Pastoral Letter to the Catholics of Ireland (pub. Sat Mar 20, 2010); House health-care vote Sun Mar 21 (Stupak EO deal), signed Tue Mar 23; Year C Lent Gospels (Luke 4 · Luke 9 · Luke 13 · Luke 15 · John 8); Divine Mercy Apr 11; Good Shepherd Apr 25; Ascension Thu May 13 (transferred to Sun May 16 in CA); Trinity Sunday May 30 (U.S. Easter-duty end); Borders on State Street, Santa Barbara-area plausibility; Deepwater Horizon Apr 20; SB 1070 Apr 23; NUMMI Apr 1; Marjah Feb 13; La Cañada debris flows Feb 6. | — |
+- Next: the S2E11 notes session with the player (open questions in the Showrunner's summary), then Showrunner plan `outlines/s2e11.md` on `saves/after-s2e10.json` per README.
+

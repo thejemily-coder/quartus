@@ -1,3 +1,45 @@
+# ⛔ ALTERNATE TIMELINE: THE SILENCE LEDGER — RE-CUT 2026-11-05 (Showrunner; branch `hard-saying-alt`; the player's Season 2 re-plan)
+**Binds above the 2026-10-29 layer table further down (kept for the record).** Jack does not go to New Orleans; **Jack and Skye stay together,
+open-ended**; the silence with Lena is **angry** and holds (total cold, three wordless crossings) until the two-part finale; **the endgame is
+deliberately unsettled.** Nothing leaks before its layer; the Knowledge Auditor checks every S2-ALT episode against this table. Bible: §0A,
+§23.2-ALT · REVISED FROM S2E11, §24.0-ALT (REVISED 2026-11-05), registry #92/#95 (revised).
+
+**Layers (re-cut):** **L1 — the alliance discovered** (S2E28: Jack puts it together; Theo tells only what's his) · **L2 — the roof** (S2E30, the last
+night of freshman year: **the honest conversation — the January truths, melancholic and regretful, no reunion; Jack stays with Skye**) · **L3 — the deep
+truths** (HELD, unscheduled: no July visit; whenever the room and the player open the road again) · **L4 — anything that belongs to a beginning between
+them** (HELD: only if Jack and Lena ever begin; includes that he slept with Skye, told by him, first).
+**Not a layer (surface only, no truth spent):** S2E17 the St. Joseph bean (no name) · S2E21 the cross (same line, no words) · S2E25 the intentions book
+(his hand; she reads it) · **S2E29 proxy fight #2** (the silence breaks ugly; accusations, not truths — the player's verbatim line; Lena's quiet is
+private; #14 and #13 may surface as *charges* but are answered only at L2; `s2e10_chair_personal` may be thrown back).
+
+| # | Truth (short) | Layer (re-cut 2026-11-05) | Who tells whom | Note |
+|---|---|---|---|---|
+| 1 | She decided over Christmas to leave Julian | **L3** | Lena → Jack | At the roof she may say *that* she'd been unhappy before Christmas — not "decided," not why. |
+| 2 | The Friday call: "Will you be around after?" | **L2** | Lena → Jack | With #17. The grief of the roof: how simple it would have been. |
+| 3 | She saw the status and the airport video; Laney took the laptop | **L2** (the status) / **L3** (video, laptop) | Lena → Jack | |
+| 4 | Why he didn't come for her after Wes (the guardrail) | **L3** | Jack → Lena | |
+| 5 | "A week" | **L3** | Jack → Lena | |
+| 6 | The Newman-party glance | **L3** | Lena → Jack | |
+| 7 | The song; her apology | **L2 first sentence** ("I asked you to come.") / apology by path at L2 or **L3** | Lena → Jack | Planted by the player's verbatim line at S2E29 (Julian still plays "Magdalena" at Bastille that week, as her friend). |
+| 8 | Skye: what she is to him | **L2 — RE-CUT: present tense.** He loves her and says so if asked, without apology. | Jack → Lena | No longer "the unsaid word" or "past tense": he is with her, happy. |
+| 9 / 18 | The physical truth — he slept with Skye | **L4** (held) | Jack → Lena, himself, before anything begins | **Not at the roof** (it's Skye's and his; the roof is about January). Lena may assume what she assumes; the page never confirms it to her. |
+| 10 | Her private blame (he poisoned Julian) | **L3** | Lena → Jack | Her ending it on her own (Feb) complicates it; she knows it now. |
+| 11 | Laney's report; she didn't believe it | **L3** | Lena → Jack | |
+| 12 | The Reliquary; the count | **L3/L4** (held; return unscheduled) | Jack → Lena | Lent from Feb 17 (no cigarettes on the default path; `reliquary` 11). |
+| 13 | The status grievance — answered | **L2** (surfaces as a charge at S2E29) | Jack → Lena | His answer is why it mattered. |
+| 14 | "How dare you be mad at me" | **L2** (thrown at S2E29) | both | |
+| 15 | The overheard fragments click | **L3** | (Jack, internal) | "…she'd *decided*" still reads as about the trip. |
+| 16 | The Christmas calls meant as much to him | **L2** | Jack → Lena | |
+| 17 | The public "liar" | **L2** | both | Taken back both ways at the roof. |
+| 19 | Her card, his slid-back no (`s2e10_lena_no = table`), what writing it cost her | **L2** (both sides) | both | He owns the silence of it; she says what it cost to write. |
+| 20 | The tickets and meeting #3 | **L1** (Jack learns, S2E28) / Lena learns he knows: **L2 only if it comes up** (default: unspoken; his suspicion she was in on it dies on the roof, unsaid) | Theo → Jack | Theo tells only the alliance, never Lena's secrets. |
+| **21** | **The roof itself** (new) | after L2 | Theo and Laney learn *that* it happened, never what was said (S2E30 tag) | Triggers the alliance's quiet re-formation. |
+
+---
+
+> ⛔ **SUPERSEDED 2026-11-05 — the 2026-10-29 Silence Ledger below (layers S2E16 / Good Friday / the roof incl. "he slept with her" / New Orleans in July)
+> is kept for the record only. Plan from the re-cut table above.**
+
 # ⛔ ALTERNATE TIMELINE: THIS IS NOW THE SILENCE LEDGER (Showrunner, 2026-10-29; branch `hard-saying-alt`)
 **Jack does not go to New Orleans in this timeline.** The NOLA truth ledger below is **SUPERSEDED as a New Orleans plan** (kept for the record:
 its PLANTED column is still accurate). Every truth is **re-placed** to one of four layers. Nothing leaks before its layer; the Knowledge Auditor
