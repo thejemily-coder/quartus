@@ -64,6 +64,15 @@ Season 2 from S2E10 for this timeline.
     rules), and it feeds the anger. **The alliance fight with Theo is mostly comic:** Jack understands Theo meant well,
     especially before Skye; what really bothers him is that Theo kept at it after Jack said he loved Skye, because Skye is
     one of Theo's oldest friends.
+  - **Skye and the faith, going forward (player, 2026-11-05).** Not necessarily a conversion. Partly because of the
+    struggles through spring and summer and their Catechism study, **in the fall (S4) Skye makes an even greater effort
+    with his faith, trying to observe as much of it as she can with him.** Her own faith journey continues and deepens;
+    **where it goes is open-ended** (never forced to a conversion, never dismissed).
+  - **Photos, videos and gossip, constantly (player, 2026-11-05; standing rule).** The photos, videos and gossip continue
+    around them all the time. **Skye is careful with what she posts** so nothing costs Jack with his family or parish, and in
+    public, where they might be photographed, she tries to keep their conduct **on the romantic side of the line, not the
+    sexual.** They're not always perfect about it: they're genuinely having fun pretty constantly, and that gives itself
+    over to recklessness (a stranger's photo, a blog item, a call from home now and then).
   - **Alt S2E11 notes session (player, 2026-11-05).** The away-weeks montage (Feb 6–21: calls and texts with Skye in New
     Mexico; texts from Theo, Kevin and Margot in New Orleans) takes **about half the episode**, with playable texting/call
     choices. **Skye's return:** he meets her at the airport/curb and they can't wait; **a long night in** (heat, talk, her
