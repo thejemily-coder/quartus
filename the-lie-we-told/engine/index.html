@@ -304,7 +304,7 @@ async function initCloud(){
   } catch(e){ console.warn('cloud unavailable', e); syncState = e && e.code==='timeout' ? 'slow' : 'local'; renderSync(); }
 }
 function syncText(){
-  return ({ cloud:'Saved to your account. <b>Synced</b>', saving:'Saving…', local:'Saved in this browser only', 'local-ro':'This account can’t write the shared save; saved in this browser only', retry:'Couldn’t reach the save server; saved in this browser, will retry', slow:'Save server not answering yet; saved in this browser' })[syncState] || '';
+  return ({ cloud:'Saved to your account. <b>Synced</b>', saving:'Saving…', local:'Saved in this browser only. Use a save file or code (Save menu) to move it', 'local-ro':'This account has view-only access, so your progress is saved in this browser only. Ask for Contributor access, or carry your save across with a save file or code (Save menu)', retry:'Couldn’t reach the save server; saved in this browser, will retry', slow:'Save server not answering yet; saved in this browser' })[syncState] || '';
 }
 function renderSync(){ document.querySelectorAll('[data-sync]').forEach(el => el.innerHTML = syncText()); }
 
@@ -625,8 +625,15 @@ function renderSave(){
     <p class="lede">Your progress saves automatically after every choice. ${done} episode${done===1?'':'s'} finished${save.current?', one in progress':''}.</p>
     <div class="kv">
       <p class="sync" data-sync>${syncText()}</p>
-      <div><h3 class="section-label">Move your save</h3>
-        <p style="margin:0 0 12px">To play in another browser or on another account, copy this code and paste it into the box below on the other side.</p>
+      <div><h3 class="section-label">Play on another account</h3>
+        <p style="margin:0 0 12px">The easiest way: from this page’s <b>Share</b> menu, give your other account access as <b>Contributor</b> or <b>Editor</b>. Every account you share it with that way plays from this same save, and it stays in sync automatically.</p>
+        <p style="margin:0">Otherwise, carry your save across with a save file or a save code. Both work on any account and any browser.</p></div>
+      <div><h3 class="section-label">Save file</h3>
+        <div class="row"><button class="btn-q" type="button" id="dlBtn">Download save file</button>
+        <label class="btn-q" for="fileIn" style="cursor:pointer">Load a save file</label><input type="file" id="fileIn" accept=".txt,text/plain" hidden>
+        <span class="msg" id="fileMsg"></span></div></div>
+      <div><h3 class="section-label">Save code</h3>
+        <p style="margin:0 0 12px">Copy this code, then paste it into the box below on the other browser or account.</p>
         <textarea id="exportBox" readonly aria-label="Your save code">Preparing…</textarea>
         <div class="row" style="margin-top:10px"><button class="btn-q" type="button" id="copyBtn">Copy code</button><span class="msg" id="copyMsg"></span></div></div>
       <div><h3 class="section-label">Load a save code</h3>
@@ -638,10 +645,20 @@ function renderSave(){
   encodeSave().then(c => { const b=$('exportBox'); if(b) b.value = c; });
   $('copyBtn').addEventListener('click', () => { const t=$('exportBox'); const m=$('copyMsg');
     try { navigator.clipboard.writeText(t.value).then(()=>{ m.textContent='Copied.'; m.className='msg'; }, ()=>{ t.select(); m.textContent='Selected. Press Ctrl+C or ⌘C to copy.'; }); } catch(e){ t.select(); m.textContent='Selected. Press Ctrl+C or ⌘C to copy.'; } });
-  $('importBtn').addEventListener('click', async () => { const m=$('importMsg');
-    try { const s = await decodeSave($('importBox').value); if(!s || s.v!==1 || !s.completed) throw new Error('That code is damaged or incomplete. Copy the whole code and try again.');
-      save = s; save.scrapbook ||= []; persist(); m.textContent='Save loaded.'; m.className='msg'; renderSave(); }
-    catch(e){ m.textContent = e.message || 'That code couldn’t be read.'; m.className='msg bad'; } });
+  async function loadCode(code, m){
+    try { const sv = await decodeSave(code); if(!sv || sv.v!==1 || !sv.completed) throw new Error('That save is damaged or incomplete. Copy the whole code and try again.');
+      save = sv; save.scrapbook ||= []; await persist(); renderSave();
+      const mm = $(m.id); if(mm){ mm.textContent = 'Save loaded.' + (syncState==='cloud' ? ' It’s now synced to this account.' : ''); mm.className='msg'; } }
+    catch(e){ m.textContent = e.message || 'That save couldn’t be read.'; m.className='msg bad'; }
+  }
+  $('importBtn').addEventListener('click', () => loadCode($('importBox').value, $('importMsg')));
+  $('fileIn').addEventListener('change', async (ev) => { const f = ev.target.files && ev.target.files[0]; if(!f) return; loadCode(await f.text(), $('fileMsg')); });
+  $('dlBtn').addEventListener('click', async () => { const m=$('fileMsg');
+    let dl = null; try { dl = window.claude && window.claude.use ? await window.claude.use('downloads') : null; } catch(e){}
+    const code = await encodeSave(); const done = Object.keys(save.completed).sort().pop() || 'start';
+    if(!dl){ m.textContent='Downloads aren’t available here. Use the save code below instead.'; m.className='msg bad'; return; }
+    try { await dl.save({ filename: 'the-lie-we-told-save-' + done + '.txt', data: code }); m.textContent='Save file downloaded.'; m.className='msg'; }
+    catch(e){ m.textContent = e && e.code==='declined' ? 'Download cancelled.' : 'The download didn’t go through. Use the save code below instead.'; m.className='msg bad'; } });
   $('resetBtn').addEventListener('click', () => {
     $('resetArea').innerHTML = `<div class="confirm"><p style="margin:0 0 10px">This erases every choice you’ve made, everywhere this save syncs. Copy your save code first if you might want it back.</p><div class="row"><button class="btn-q" type="button" id="resetYes" style="border-color:var(--danger)">Erase everything</button><button class="btn-q" type="button" id="resetNo">Keep my save</button></div></div>`;
     $('resetNo').addEventListener('click', renderSave);
