@@ -5,7 +5,7 @@ An interactive prestige-TV college drama. Hollis University, fall 2005.
 **Play:** https://claude.ai/artifact/SBENzwasZt31RADJQQChRA
 
 ## For the player
-- Your save is stored with the game page and in your browser, and updates after every choice. Any account you share the page with as Contributor or Editor (Share menu) plays from the same synced save. For any other account or browser, use **Save → Save file** or **Save code**.
+- Your save is stored with the game page and in your browser, and updates after every choice. Any account you invite as Editor (or Contributor, if in the same organization) plays from the same synced save; an outside Editor syncs only while the page has no public link. For any other account or browser, use **Save → Save file** or **Save code**.
 - When you finish an episode, open a Claude Code session on this repository (branch `claude/gifted-cori-ldbw2e`) and say **"next episode."**
 - Please don't open `SPOILERS-showrunner-only/`. It holds the writers' room's secrets.
 
