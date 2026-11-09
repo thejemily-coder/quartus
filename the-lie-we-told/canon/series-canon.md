@@ -69,6 +69,8 @@ Hurricane Katrina (landfall Aug 29, 2005 — hits in Episode 2; Rafe can't reach
 - **Romantic complication:** Graham Ashford (below) — what she could secure if she chose.
 
 ### The romance
+**How they fight (player note, binding):** Cal and Del fight furiously and full-throatedly, and they *enjoy* it: the fights are a kind of foreplay and a kind of honesty, loud, funny, cruel, precise, each knowing exactly where to aim. Neither backs down gracefully. They enjoy the make-up sex even more: angry, loud and rough, consensual and mutual, both of them giving as good as they get. Write these fights as set pieces, not as problems to be solved. A fight can be about something real (and often is) while still being something they both crave.
+
 "Two arsonists." Both reckless, both escalate. They dare each other, start fires, are drawn to the same danger. The heat is a mutual addiction; so is the damage. Volatile, deeply intense, begins Night One, carries them through four years and beyond. They come of age together and learn who they are.
 
 **Pilot cold open:** Saturday, August 27, 2005, move-in day. Cal gets off a Peter Pan bus with a duffel and a borrowed suitcase while Teddy's parents unload a Range Rover. That night, **caught in the same lie**: at a party neither was invited to (frat, final club or society-adjacent), both are bluffing their way through. Each catches the other mid-con. They make a pact of silence that turns into the most electric night of their lives — and ends in bed.
