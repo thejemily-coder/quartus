@@ -1,0 +1,266 @@
+@id s1e1
+@season 1
+@episode 1
+@title Somebody Told Me
+@title_credit "Somebody Told Me" — The Killers (2004)
+@date Saturday, August 27, 2005
+@start cold_open
+
+=== cold_open
+@act COLD OPEN
+@pov cal
+@slug SOUTH STATION, BOSTON — 6:50 A.M.
+
+Deck dropped him at six in his uncle Jimmy's truck, got out to help with the suitcase, and didn't help with it. He watched Cal fight the broken wheel, then shoved him in the chest the way he'd been shoving him since first communion and laughed the big red laugh that had gotten them thrown out of CCD and two wakes. "Don't come back talking like them. I'm serious. You come home saying 'genuinely,' I'm putting you through the Dunks window. I'm just saying."
+
+He got back in the truck. The window came down.
+
+"Cal." Quieter. "We're good, Cal. We're good."
+
+"I know," Cal said, to the taillights.
+
+His mother hadn't come. She'd worked a double at the Quiet Man, and on the fridge at Gold Street she'd left two twenties under the Sully's magnet and a note.
+
+[note from="Ma"]Cally. Knock em dead. Don't let them see you eat, they can smell it. There's a sandwich in the fridge, don't eat it, it's from Tuesday, I'm just saying. Call your mother, she's a fun lady. Love, Ma. P.S. Forty bucks under the Sully's magnet, that's NOT for the twins, they have me. xo[/note]
+
+Not for the twins, which meant it was for the twins. The twenties were in his sock now with the rest. Two hundred and twelve dollars, flat against the ankle bone.
+
+On the 6:50 Peter Pan he had Deck's mother's plaid suitcase underneath, his duffel at his feet, and his Discman shut with a rubber band.
+
+[needle] The Dirty Glass | Dropkick Murphys | Cal's Discman on the Peter Pan
+
+A man and a woman screaming at each other across a bar, which was as close as Cal's collection came to a love song. Across the aisle a heavy man in a Sox cap read the *Herald* and breathed through his mouth. The Pike, then 91 north, Massachusetts thinning out into farm stands.
+
+The Calder Falls depot, around nine-fifteen, was a bank of pay phones and a TV over the ticket counter showing a storm in the Gulf, the white cone laid across the map like a finger. Nobody watched it. The man in the Sox cap got off too.
+
+Main Street ran a mile uphill and the wheel clacked the whole way: the Hollis Bookstore, a diner, St. Anne's with its doors propped for the heat, a dead brick mill with the river loud under it. At the top, iron gates, 1791 in the arch. Behind him as he went through came the dry ratchet of a disposable camera. The man in the Sox cap was lowering a yellow Kodak, squinting at the gates. Tourists.
+
+[sms from="Deck" time="9:41 AM"]u there yet harvard. dont let them tie a sweater on u. they do it while ur sleeping[/sms]
+
+[sms to="Deck" time="9:43 AM"]not harvard. 2 sweaters so far. both on dads[/sms]
+
+Sutter Hall's curb was a traffic jam of money. A black Range Rover with the tailgate up, a Saab 9-3 behind it, a woman in a silk scarf directing two boys and a hand truck with the calm of someone who had moved many households and carried none of them. A tall man in a blue oxford stood at the tailgate on his cell. He didn't lower it. He looked at Cal, at the plaid suitcase, and pointed at a box. His other hand held out a twenty, folded lengthwise, the way you'd tip a valet.
+
+His eyes went to the scar through Cal's eyebrow, seven weeks old and still pink, and away.
+
+* Carry the box. Say nothing. -> curb_after | set: s1e1_curb="carried"
+* "I'm the roommate, sir. I carry things for free. I'm told it's in the brochure." -> curb_after | set: s1e1_curb="corrected"
+* Carry the box. Keep the twenty. -> curb_after | set: s1e1_curb="tipped"
+
+=== curb_after
+
+{if s1e1_curb == "carried"}
+Cal carried the box up the steps and set it down inside. When he came back out the twenty was back in the oxford pocket and the man was saying "No, Bill, the whole tranche" to somebody in New York. He never learned whose roommate he'd just used as a porter, and Cal let him not learn.
+{/if}
+{if s1e1_curb == "corrected"}
+"I'm the roommate, sir. I carry things for free. I'm told it's in the brochure."
+
+"Of course you are," the man said, without a flicker, and the twenty slid back into his pocket like the end of a card trick. The phone went back up. It was so smooth it took Cal a second to feel it, and it was worse than the mistake. The mistake had at least been about him.
+{/if}
+{if s1e1_curb == "tipped"}
+Cal took the twenty, carried the box, and on his way back out said "Thank you, sir" with a smile so polite you could have served it at a funeral. On the top step somebody laughed out loud and turned it into a cough.
+{/if}
+
+Then the suitcase caught its bad wheel on the bottom step, and a tall kid with golden-brown hair and a rower's shoulders came down two at a time and took the other end. "Reardon?"
+
+"Cal."
+
+"Cal. Teddy. On three. This thing weighs more than my car."
+
+They were friends in eight seconds, which Cal resented a little, the way you resent a song for being so sure of itself.
+
+{if s1e1_curb == "tipped"}
+"You kept the twenty," Teddy said on the first landing, delighted. "He does that." He laughed half a second early.
+{/if}
+
+By the second landing it was "roomie." Teddy kept looking at the eyebrow. "What happened there?"
+
+Cal touched it. "Bar fight. I won. Wicked narrowly."
+
+From the stairwell below came the voice from the phone. "Bear, the rug."
+
+Teddy's shoulders came down half an inch. "Coming!" he called, in a voice that wasn't the one he'd been using. Cal filed it.
+
+-> movein_304
+
+=== movein_304
+@act ACT ONE
+@slug SUTTER HALL 304 — 11:20 A.M.
+
+Teddy's half of the room looked like a catalog mailed to the wrong house: a Ralph Lauren duvet, a PowerBook, a silver mini stereo, a framed photo of Teddy and his father in a racing shell with the father's hand on the back of Teddy's neck, and a lacrosse stick with the tags still on.
+
+"You play?"
+
+"God, no. My mother thinks it's a conversation starter."
+
+Cal's half took four minutes. A Sox pennant. A photo of the twins at Castle Island, Siobhan holding her Sully's cone like evidence and Patrick with his whole face in his, both twelve, both squinting at Cal behind the camera. And the crucifix Patty had pressed on him last night in a Quiet Man bar towel. There was already a nail over the bed. He hung it without thinking, then turned around, and Teddy was looking at it.
+
+So it was up now. Taking it down would need a sentence, and he didn't have one.
+
+"That's nice," Teddy said. "No, genuinely." Then he went back to his stereo and kept not mentioning it so carefully and so kindly that Cal almost wished he'd made a joke. You could hit a joke back.
+
+In the common room the TV was on CNN, a Category 3 grinding across the Gulf under its cone, until a boy in a popped collar said "Dude, no," and put on MTV.
+
+On the stairs Cal met a mini-fridge coming up between a slight kid in wire glasses, a notebook in his back pocket, and a man in his sixties in a Hollis-green groundskeeper's shirt who had most of the weight. Cal took a corner. At the third-floor window they stopped to breathe. The town, the mill, the river flat and white in the haze.
+
+"The river's that way," the kid said, to nobody. "They fenced the dam two weeks ago. A girl drowned."
+
+"Henry," his father said.
+
+Henry stopped. His father's hands stayed flat on the fridge. Then Henry pointed, as if to put something else in the window: a dark granite cube with no windows at all, out on the bluff at the end of the road.
+
+"That's the Ferryhouse. It's a club for dead people."
+
+His father almost smiled. "Up," he said, and they went.
+
+-> commons
+
+=== commons
+@slug THE COMMONS — 2:40 P.M.
+
+Crossing the Commons for his ID photo, he heard a Bramwell Hall window playing the same song over and over, the way you play a song the week it's yours.
+
+[needle] Mr. Brightside | The Killers | a Bramwell Hall window, on repeat
+
+On Bramwell's lawn a sun-streaked blonde girl with no parents anywhere was dragging a steamer trunk up the steps herself. Brass corners, old leather, E.A. in gold under the lock. A boy in a pastel polo jogged over to help. She smiled at him, a smile that could have cut glass, and he went away.
+
+A girl in pearls and a ribbon held the door, beside a woman in a hat the size of a patio umbrella. "If I may," she called down to the blonde, pure Charleston, "you must be my roommate, or else the bravest girl in Massachusetts. Do come in out of this heat before Mama offers you sweet tea and a husband." She came two steps down to take the other handle and was refused with the same smile as the boy, which seemed to delight her.
+
+The blonde got the trunk onto the top step alone, looked straight across the lawn at Cal, and raised one eyebrow. Then she was inside.
+
+Rich girl, Cal thought. Too rich to need parents. At the ID table the woman told him not to smile, and he did anyway.
+
+-> floor_meeting
+
+=== floor_meeting
+@slug SUTTER HALL, THIRD-FLOOR LOUNGE — 5:00 P.M.
+
+Julian Thorne wore a gray suit in August. It took Cal half the meeting to work out why it bothered him: it was perfect, and perfect was something you could buy secondhand if you knew which rich widows died in which towns.
+
+He stood with his back to the window and the river and did the rules like a set at a club where somebody might get stabbed.
+
+"Quiet hours begin at eleven on weeknights. Some of you have never heard of a weeknight. You'll learn. The fire doors are alarmed, by which I mean wired, not upset. If you're going to vomit, vomit in your own room; I'm an RA, not a priest." The laugh came and he didn't wait for it. "Anything else you'll regret, do it quietly and off this floor. Rules I enforce. Advice I watch."
+
+He never smiled. The room loved him anyway.
+
+Afterward he put two fingers on Cal's sleeve. "You're the Haverford Scholar. Don't look surprised; one reads the files."
+
+"I wasn't looking surprised."
+
+"You were looking at my suit. Same thing. You're my second."
+
+"Second what?"
+
+"Haverford Scholar. The first is giving the welcome at Convocation in an hour. Watch him; he's what this place does to people like you when it likes them." Down the hall Teddy was explaining to a boy from 302 why he didn't play lacrosse. "Your roommate will tell you tonight is about fraternities. Frats are for men who need a roof to feel important. Real power is behind a door on Prospect Street tonight, and you won't get through it. Presumably you've noticed the shoes."
+
+* "Watch me. Bring a folding chair." -> julian_reply | set: s1e1_julian_reply="watch_me"
+* "Who says I want through it?" -> julian_reply | set: s1e1_julian_reply="who_says"
+* "What's in it for you, Captain?" -> julian_reply | set: s1e1_julian_reply="why_me"
+
+=== julian_reply
+
+{if s1e1_julian_reply == "watch_me"}
+"I intend to," Julian said. He meant it literally. It sounded like an appointment.
+{/if}
+{if s1e1_julian_reply == "who_says"}
+Julian looked down, unhurried, at Cal's feet. "Your shoes." Cal didn't look. He knew how many times they'd been resoled.
+{/if}
+{if s1e1_julian_reply == "why_me"}
+"Because you'll try anyway," Julian said, "and I'd like to know how it goes."
+{/if}
+
+Then, lower: "Also. There's a bar in town called the Mill Race. The owner needs a barback. Tell him Julian sent you. Don't tell anyone else I did."
+
+He walked off down the hall. Cal stood by the pizza boxes with a dare in one pocket and a job in the other, and couldn't have told you which he'd been handed.
+
+-> convocation
+
+=== convocation
+@slug FOUNDERS' CHAPEL — 6:00 P.M.
+
+Founders' Chapel was white clapboard under a white steeple, its square bell tower raised over the Commons like a hand at a meeting. Everyone already called it the Beacon. Inside it was hot as a laundromat. President Pyne spoke for eleven minutes about stewardship, and Cal suspected President Pyne wouldn't remember it either. Dean Carrow sat on the dais in a green bow tie, silver-haired, turning a gold signet ring as if he were winding something.
+
+Then the Student Assembly President stood up. OWEN M. TIERNEY '06, said the program. His first joke got the balcony and his second got the parents, and under four years of polish, sanded nearly flat, was Dorchester. Cal heard it the way you'd hear a Sox score through a wall.
+
+"My mother cleaned houses in Milton," Owen said. "Big ones, with libraries nobody read in. If I can be standing here, in a suit I'm still paying off, then believe me, you belong in this room." He waited past the laugh so they'd lean in. "So work hard, be good to the people who clean up after you, and when you look back on this year, I hope you can say what the old song says. 'Of all the harm that e'er I've done, alas it was to none but me.'" A grin. "Mostly."
+
+The chapel laughed. Cal laughed, his heart going, because it was the first time all day anybody at Hollis had sounded like home.
+
+The first one, Julian had said. Cal clapped harder.
+
+{if s1e1_julian_reply == "watch_me"}
+Across the aisle Julian clapped twice, precisely, and looked straight at the folding chair he'd been promised.
+{/if}
+{if s1e1_julian_reply == "who_says"}
+Three rows up Julian turned his head one inch, found Cal's shoes, and turned it back.
+{/if}
+{if s1e1_julian_reply == "why_me"}
+Three rows up Julian wasn't clapping at all. He was watching to see how it went.
+{/if}
+
+-> matriculation
+
+=== matriculation
+@slug FOUNDERS' CHAPEL, THE NARTHEX — 7:05 P.M.
+
+The Matriculation Book had been open on its lectern since noon: calf-bound, the size of a headstone, a steel-nib pen in a brass well, a brass plaque explaining at length that every student since 1791 had signed it and that the book was kept.
+
+Henry was behind him in line. Ahead was a girl in a navy blazer in eighty-six degrees, a dark-auburn bob that didn't move when she did, the printed Freshman Register under her arm. Cal watched her find a page, study it, and look down at his shoes.
+
+She turned around. "You're the scholarship boy from Boston. Brennan. Columbus. Debate. We'll be enemies."
+
+* Flirt. -> kit_reply | set: s1e1_kit_opening="charm"
+* Go for the throat. -> kit_reply | set: s1e1_kit_opening="cut"
+* Agree with her. -> kit_reply | set: s1e1_kit_opening="agree"
+
+=== kit_reply
+
+{if s1e1_kit_opening == "charm"}
+"Enemies is a big commitment. We haven't even had coffee."
+
+"Respectfully, Reardon, this isn't a courtship. It's a deposition, and you're the exhibit."
+
+"You looked me up and checked out my shoes. Where I'm from that's a second date."
+
+"Noted," Brennan said, bone dry, but he saw the corner of her mouth go, and saw her furious at it.
+{/if}
+{if s1e1_kit_opening == "cut"}
+"You memorized the Register. On move-in day."
+
+"It's called preparation."
+
+"It's Saturday night and you're in a wool blazer in a church, reciting strangers' hometowns. Who's that for?"
+
+"For the record, that was a cheap shot." She smiled, slow and pleased, like a fencer who'd found somebody already holding a foil. "Do it again."
+{/if}
+{if s1e1_kit_opening == "agree"}
+"Good," Cal said. "I've never had a real one."
+
+Kit had three sentences lined up behind her teeth. None of them fit. "You're supposed to argue."
+
+"Why? You made a good case."
+
+She turned back to the book as if it had insulted her mother.
+{/if}
+
+She signed *Katherine Anne Brennan* in a quick hard slant. Cal took the pen, a nib that punished left-handers, and signed *Callum Patrick Reardon* on the same page, three lines below *Delphine E. Ashcombe* in a careful upright hand.
+
+Henry peered around his shoulder. "She signed like she was copying it."
+
+"Who?"
+
+"She came in at four, in black pants and a white shirt. She didn't read the plaque." He took out his notebook. "Everybody reads the plaque."
+
+{if s1e1_kit_opening == "charm"}
+Brennan's slant was still drying three lines up. He found he'd have liked to see that mouth-corner go again.
+{/if}
+{if s1e1_kit_opening == "cut"}
+Brennan was already at the door with her chin up, and the strange part was how much better he felt for having been hit by someone good.
+{/if}
+{if s1e1_kit_opening == "agree"}
+Brennan was waiting by the door, not looking at him, which was a way of looking. He'd have rather been arguing.
+{/if}
+
+Delphine, Cal thought. It sounded like a boat. He handed Henry the pen and went out into the long gold heat, wiping ink off the side of his hand.
+
+-> evening_fork

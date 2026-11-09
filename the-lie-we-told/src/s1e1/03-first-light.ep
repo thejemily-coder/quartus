@@ -1,0 +1,253 @@
+=== corinthian_door
+@act ACT TWO
+@slug 14 PROSPECT STREET — 9:10 P.M.
+
+Fourteen Prospect Street was a Greek Revival temple somebody had talked into being a house: six white columns, a pediment like a raised eyebrow, a black door with no knob on the outside. Brick walls ran from both corners and hid a garden full of men laughing at a volume that assumed nobody would ever call the cops.
+
+The door opened before he knocked. The member behind it was maybe twenty-one, pink from the heat, in a bottle-green blazer with brass buttons that caught the porch light like coins in a fountain. Past his shoulder, through the hall and out across a terrace, Cal counted the same green on thirty backs, same brass, a little gold column stitched over every heart. The guests wore navy. The members wore the club.
+
+The kid took the engraved card and read it, then read Cal's face, then read the tie, and the tie was what did it. His eyes stayed on the stripe longest.
+
+"Vanderhoef," he said, and stood aside. "Welcome home."
+
+Inside smelled of lemon oil and cigars. Below the terrace the garden was laid out in boxwood, clipped knots and diamonds, with hurricane lanterns burning along every ledge of the wall. A jazz trio in white dinner jackets played for nobody in particular.
+
+[needle] Night and Day | Cole Porter (jazz trio) | the terrace
+
+"*Vanderhoef!*"
+
+It came across the terrace like a thrown drink, from a soft-faced senior in green holding court by the balustrade, a glass in each hand and his tie already a souvenir. "Archie Whitby," said the kid at the door, at Cal's shoulder. "President. He's been president since noon." Everyone near Archie laughed a half-second before he finished.
+
+Cal heard the name. He even registered it as a nice old Dutch one, the kind that went on boathouses. A full second later he remembered it was his, and turned, and lifted his hand, and grinned like a man who'd waited all summer to be yelled at. Archie roared approval and went back to his court.
+
+The second had already happened, though. Cal felt it on the back of his neck, the way you feel a hand near your wallet on a crowded Red Line car, and when he looked around, all he could see was green.
+
+-> owen_bar
+
+=== owen_bar
+@slug THE CORINTHIAN, THE BAR — 9:30 P.M.
+
+[set s1e1_owen_poured=true]
+
+The members' bar was a mahogany counter in a paneled room off the terrace, under a hunting print of men in red coats killing something for sport. Nobody was tending it. Owen Tierney was, sort of. He'd come around behind it in the club's bottle-green blazer, a Student Assembly pin on the lapel, pouring for himself and whatever freshmen drifted close enough, humming under his breath.
+
+Cal knew the tune before he knew he knew it. *The Parting Glass.* Three hours ago Owen had quoted a line of it to the whole chapel and gotten a laugh.
+
+"Teddy," Owen said, and his face did the thing it had done from the pulpit: sandy-red hair, a field of freckles, a grin with the whole Kennedy family in it. The grin had a second layer, and the second layer said *I know exactly who you are, and I think it's great.* "What'll it be? And don't say a Cosmo, I'll have to report you to your father."
+
+"Whatever you're having."
+
+"Good man." Owen reached for the Jameson without looking, the way Patty reached for the Jameson at the Quiet Man, and poured two fingers and then a little more for luck. "You're a St. Brigid's kid. No, sorry." He laughed at himself. "You remind me of a kid I knew."
+
+The floor went a degree off level.
+
+St. Brigid's was his parish. He'd been baptized there and had served the seven o'clock Mass for two years in a cassock that stopped at his shins. For a second the whole Corinthian looked like a set somebody could strike in an afternoon.
+
+Then he did the math the way you do when you want a particular answer. Every Irish kid in Boston with black hair and a fresh scar looked like a kid somebody knew. And Owen was lovely. That was the evidence. Owen was standing behind a rich men's bar in resoled Aldens, and Cal knew those soles, because he'd paid a cobbler on West Broadway for the same job twice.
+
+"Common face," Cal said.
+
+"Not that common." Owen slid the glass over. A white rope burn crossed his right palm, a stripe of slick new skin from the heel of his hand to the base of his fingers, healing but not healed. When he took his hand back he rubbed the stripe with his thumb, once, like it itched. His eyes went to Cal's eyebrow for half a second and then came back up, easy, warm, interested.
+
+"Drink that slow. I'd stay and make sure, but I can't stay late. Early meeting." He raised his own glass an inch. "Assembly budget. The most thrilling document in New England."
+
+* Drop the act. He's from home. -> owen_reply | set: s1e1_owen_response="admitted"
+* Stay Teddy. Make him work for it. -> owen_reply | set: s1e1_owen_response="stayed_teddy"
+* Ask about his hand. -> owen_reply | set: s1e1_owen_response="asked_hand"
+
+=== owen_reply
+
+{if s1e1_owen_response == "admitted"}
+"It's Cal," he said. "Reardon. Gold Street. You had the parish right. You just got the kid wrong."
+
+Owen didn't blink. He looked, if anything, relieved, like a man who'd been holding a door and could finally let it go. "Cal Reardon, Gold Street." He said it back slowly, like tasting it, and a little Dorchester came up through the polish. "Listen to me, kid. Haverford Scholars find each other. Julian said there'd be a new one." He tapped the bar twice, a little benediction. "Your secret's safe. Be Teddy tonight. God knows Teddy could use the help."
+{/if}
+{if s1e1_owen_response == "stayed_teddy"}
+{if s1e1_teddy_coached}
+"Never been to Boston," Cal said, in Teddy's voice, with Teddy's little laugh coming early. "Well. Once. She was a nice girl. I never called."
+{else}
+"Brigid's," Cal said, in the closest thing he had to Teddy's voice, which was mostly Teddy's laugh, coming early. "Is that a club? I think my mother's on the board."
+{/if}
+
+Owen was delighted. He leaned on the bar to enjoy it. "And how's your father, Teddy?"
+
+"Rich. Loud. Mostly in other rooms."
+
+"Give him my best." Owen winked, slow, so Cal couldn't possibly miss it.
+{/if}
+{if s1e1_owen_response == "asked_hand"}
+"What happened to your hand?"
+
+Owen looked at his palm like it belonged to a guy he'd only just met. "Sailing," he said, and smiled. "I'm terrible."
+{/if}
+
+Somebody in green clapped Owen on the shoulder and Owen leaned into it the way a politician leans into weather, delighted and damp, already laughing, already using the guy's name. Over his shoulder he said, "Music's upstairs. Money's on the terrace. Here's what I'd do," and then he was gone into the crowd without saying what he'd do.
+
+Cal held the Jameson by the bowl of the glass and drank it slow.
+
+* Follow the music upstairs. -> party_upstairs | set: s1e1_party_branch="upstairs", s1e1_heard_rafe_call=true
+* Stay on the terrace. Work the money. -> party_terrace | set: s1e1_party_branch="terrace", s1e1_watched_del_work=true, s1e1_heard_lantern_lore=true
+
+=== party_upstairs
+@slug THE CORINTHIAN, SECOND FLOOR — 9:40 P.M.
+
+The line for the second-floor bathroom ran halfway down the hall, and through the door came guitars, tinny and furious.
+
+[needle] Take Me Out | Franz Ferdinand | Rafe's SoundDock
+
+The bathroom was bigger than Cal's kitchen on Gold Street: black-and-white tile, a clawfoot tub full of ice and Heineken, a white Bose SoundDock on the toilet tank playing to the porcelain. At the sink a wiry kid with dark shaggy hair was doing business like a pharmacist. Narrow black jacket, buttoned, in the heat. Black nail polish chipped down to islands. His stock was laid out on a monogrammed hand towel, folded paper packets and a credit card, with the cash in the soap dish.
+
+"Next," he said.
+
+"Vanderhoef," said the member ahead of Cal, pointing back at him, a social courtesy.
+
+The kid looked up. He took Cal in from the tie to the shoes and back up, slowly, the way you read a menu in a language you speak better than the waiter.
+
+"Teddy Vanderhoef? I've met Teddy Vanderhoef. Southampton, two summers ago, a regatta that was really a hostage situation." He gave the name a little wave, like smoke. "He's taller and sadder."
+
+Cal had his mouth open to sell it. The kid held up one painted finger.
+
+"No. Don't. You'll ruin it." He was grinning now, wide, like a child at a magic show who has just seen exactly where the coin went. "I'm Rafe, and I will tell no one. Not out of loyalty, I've never had the stamina for loyalty. But nobody else in this building deserves it as much as I do."
+
+His phone buzzed against the marble, a silver Razr doing a little dance. He looked at the screen and his face did something fast and private and then got very bright. He flipped it open and put it on speaker and held it up to the room.
+
+"Mémère. You're on with the Corinthian Club bathroom, say hello."
+
+An old woman's voice came out of the phone, low and amused and made of cigarettes. "*Raphaël.* Turn down that noise."
+
+"The mayor just told the whole city to leave, Mémère. On television. I watched him."
+
+"He said voluntary."
+
+"Voluntary means *you*. Voluntarily. You, in the car, on I-10, eating a praline."
+
+"I have been through Betsy, and I have been through Camille," said the phone, "and I will be through this one with a bottle of Sazerac and my rosary, and you will call me Monday and apologize." Then, in French, something that made Rafe close his eyes.
+
+"She's hung up on me," he told the room, and everybody laughed, and he laughed loudest, a long looping laugh with a hiccup in the middle. He snapped the Razr shut. Cal watched his hand. It was shaking, a fine fast shiver, and Rafe looked at it like it was somebody else's and put it in his pocket.
+
+Then he sold the sophomore a gram, counted the change out of the soap dish, and offered Cal the corner of a credit card with a little white hill on it.
+
+"On the house. For your performance."
+
+"Teddy's a lightweight," Cal said. "Two Smirnoff Ices and he cries about rowing."
+
+Rafe considered this with real respect. "That's so specific I believe it." He tipped the card back over the towel. "Rain check, Theodore."
+
+Cal went back out past the line with nothing in him but one slow Jameson and an old woman's voice saying *voluntary* like it was a dirty word.
+
+-> del_kitchen
+
+=== party_terrace
+@slug THE CORINTHIAN, THE TERRACE — 9:40 P.M.
+
+The money stood at the bright end of the terrace in a loose horseshoe around Archie Whitby: Sig Rho legacies with lacrosse necks, two seniors in green arguing about a yacht like it was a horse, somebody's uncle. They opened the horseshoe for the tie and closed it behind him.
+
+"Vanderhoef, old boy," Archie said, and handed him a fresh glass out of thin air. "Thank God. Tell them the one about your father and the Danforth boathouse. Nobody believes me. I tell it frightfully badly. I tell everything badly."
+
+Cal had never heard of the Danforth boathouse. He knew Danforth was across the river and in New Hampshire, and that was all he knew.
+
+"Which version?" he said. "The one he tells at Christmas, or the true one?"
+
+The horseshoe tightened. He gave them 1978 and a full moon, Theodore Vanderhoef III and three Sig Rho brothers rowing a borrowed skiff upriver at two in the morning with a can of Hollis-green paint, in through the coxswain's window, out with every Danforth oar. "Here's the part he leaves out at Christmas," Cal said. "You can't swim with eight oars. So they stole the shell too. Four drunk guys rowing an eight. Forty minutes in circles. Danforth's crew came down to the dock and applauded."
+
+"*No*," said a legacy.
+
+"He sent them a thank-you note. On the firm's stationery. Danforth framed it. It's in their boathouse right now, if you know where to look."
+
+"That's not how my father tells it," said a senior in green, frowning.
+
+"Your father was in the boat," Cal said. "He's the one who kept going in circles."
+
+The horseshoe came apart. Archie laughed hardest, a high delighted bray, and slapped the balustrade, and Cal could watch him filing it word for word for the next party, a story made up in forty seconds already on its way into the record. It was the best he'd felt all day, and it felt the way a stolen Slim Jim tastes: great, for about four seconds.
+
+"That," Archie said, wiping his eyes, "goes in the book. Do you know about the lantern? Of course you don't, you're new. On the library mantel. Brass, ugly as sin. We light it once a year, tonight, First Light. The first Corinthian carried it out of the fire of 1832 with his eyebrows on fire, and he never let anyone forget it, and neither do we. Hence the party. We're commemorating a man who would not shut up."
+
+Cal laughed in the right place and stopped listening, because a server had come through the horseshoe.
+
+White shirt, black pants, a black apron with a name tape over the pocket: JO. She was carrying four champagne flutes in one hand, stems laced through her fingers, and she lifted two empties off the balustrade with the other without stopping. At the next table she stacked a busboy's plates for him before he'd figured out where to put them. When a member's elbow tipped a tray behind her she turned and caught the tray's edge with her hip, flat, without looking, and kept moving.
+
+Cal knew that. He knew it the way you'd hear your own accent in a foreign airport. The rich kids who waited tables for a lark at the Cape did it like a game they could quit. She did it like rent.
+
+She never came to the bright end. Every time she crossed the terrace she kept to the lanterns' blind side, her face turned toward the garden. Blonde, hair up. He tried twice to catch it and caught only the back of her neck.
+
+-> del_kitchen
+
+=== sloane_toast
+@slug THE TERRACE — 10:15 P.M.
+
+Archie got up on a chair, which went about how you'd expect, and the trio stopped mid-bar. "Members. Guests. People who will be guests for the rest of their lives. Our toast is given by an honorary member who wrote speeches for a President, which is why he won't let me write mine. Professor Sloane."
+
+The man who stepped up beside the chair didn't need it. He was forty or so, lean gone soft at the middle, in rumpled tweed nobody sane would wear in August, black hair silvering at the temples. An old steel watch sat loose on his wrist, the kind a man wears because somebody died. He held his glass in his left hand. The terrace quieted for him in a way it hadn't for Archie.
+
+Servers came through with the toast trays. One stopped at Cal's elbow and he took a flute and looked her in the eye, the way he'd have looked at Bonnie or at Patty or at anybody holding a tray, because you did.
+
+"Thanks, Jo," he said. He'd read the apron.
+
+She froze. The tray stopped dead and the flutes on it shivered. Her face, for one second, went somewhere he couldn't follow, like he'd said something in a language only she spoke.
+
+{if s1e1_saw_jo_photo}
+*Jo.* Three hours ago, the name had been on masking tape on a pickle jar by the Race's register. It caught in him and passed. It was a common name. It was a short one.
+{else}
+{if s1e1_knows_josette_name}
+*Jo.* Henry's voice at the bluff, three hours back: *Josette Lavoie. Jo. She was twenty.* It caught in him and passed. It was a common name, and a short one.
+{/if}
+{/if}
+
+{if s1e1_watched_del_work}
+It was the four-flute girl. Up close, in the lantern light she'd been dodging, she was the blonde from Bramwell's steps, the one with the steamer trunk and no parents and the eyebrow. He had the first word of it ready, *you're*, and didn't say it.
+{else}
+Up close, something about her was familiar, the line of her jaw or the angle she held her head. He couldn't place it, and he was good at placing faces.
+{/if}
+
+Sloane raised his glass.
+
+"The first lie Hollis will tell you," he said, "is that you belong here. The second is that you don't." He let the terrace wait. "Spend four years deciding which one to believe."
+
+He drank, and they drank, and they cheered him the way people cheer when they aren't sure they've been complimented. His eyes passed over the crowd. They were pale gray-blue, the color of the river under haze, and they didn't seem to land anywhere long.
+
+{if s1e1_party_branch == "terrace"}
+"*Vanderhoef!*" Archie, from the chair. "Tell the Professor the boathouse one!"
+{else}
+"*Vanderhoef!*" Archie, from the chair, for no reason at all. "Greenwich! Come meet the Professor!"
+{/if}
+
+The full second again. Cal heard it, and then remembered it was his, and then turned. The server was looking right at him while he did it. She saw the whole second go by. Then she turned with her tray and was gone into the house, and the place where she'd been standing was just terrace.
+
+The crowd shifted and dropped Cal at the members' bar, at Sloane's elbow, the two of them facing the same row of bottles. Sloane didn't look at him.
+
+"Vanderhoef," he said. "You don't sound like Greenwich."
+
+* Keep lying. Do it well. -> sloane_reply | set: s1e1_sloane_response="lied"
+* Tell him your real name. -> sloane_reply | set: s1e1_sloane_response="truth", s1e1_told_sloane_truth=true | echo: You told a stranger your real name.
+* Make it a joke about lying. -> sloane_reply | set: s1e1_sloane_response="joke"
+
+=== sloane_reply
+
+{if s1e1_sloane_response == "lied"}
+"Boarding school," Cal said, easy. "It kills the accent. My mother still cries about it. She says I sound like a scholarship boy." He gave it Teddy's laugh, early.
+{if s1e1_teddy_coached}
+"Her hip's titanium, so the crying's mostly structural."
+{else}
+"We don't talk about it at the club."
+{/if}
+
+Cal touched the eyebrow without noticing, and Sloane's eyes followed the hand.
+
+Sloane's mouth went crooked on one side. "Then you're better at this than your father." He lifted his glass an inch. "I wrote speeches for a President for four years, Mr. Vanderhoef. The best liars all have one thing in common. They enjoy it a little less than you do." He let that sit one beat too long, as if he'd heard himself.
+{/if}
+{if s1e1_sloane_response == "truth"}
+He didn't know why he did it. The toast, maybe. "I'm Cal Reardon," he said. "South Boston. The tie's on loan."
+
+Sloane didn't answer. The trio started again behind them. He set his glass down on the mahogany and turned it a quarter turn by the stem with his left hand, and the pause went on long enough that Cal started composing an exit.
+
+"I knew a Reardon once," Sloane said. "Long time ago." Then he picked the glass back up. "Nobody here is supposed to be here, Mr. Reardon. Enjoy it."
+{/if}
+{if s1e1_sloane_response == "joke"}
+"I'm not lying," Cal said. "I'm workshopping."
+
+Sloane laughed, a real one, surprised out of him. "Then take my seminar. HUM 117. The Uses of Lying. Wednesdays, two o'clock. Bring that."
+{/if}
+
+He looked at Cal then, finally, straight on, and held it a moment longer than a stranger would, the way you'd look twice at a word you'd spelled right and suddenly weren't sure of. Then three men in green came at him with their hands out, *Nate*, *Professor*, *you have to settle something*, and the members closed around him and he was gone.
+
+-> corridor_catch
